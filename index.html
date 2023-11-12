@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Data Science Portfolio</title>
+<style>
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-content, .sidebar {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.main-content {
+  width: 75%;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #f4f4f4;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.sidebar a {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sidebar a:hover {
+  color: #007bff;
+}
+
+.section-header {
+  background-color: #e8e8e8;
+  padding: 10px;
+  margin-top: 30px;
+  border-left: 5px solid #333;
+}
+
+.work-entry, .project-entry, .education-entry {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-list li {
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .main-content, .sidebar {
+    width: 100%;
+  }
+
+  .sidebar {
+    height: auto;
+  }
+
+
+}
+
+
+</style>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<body>
+
+<div class="main-content">
+    <section>
+        <h1>Welcome to My Data Science Portfolio</h1>
+        <p>A showcase of my data science skills and side quests!.</p>
+      </section>
+      <section id="work-experience">
+        <div class="section-header">
+          <h2>Work Experience</h2>
+        </div>
+        <p></p>
+
+        <!-- Current Work at Zally -->
+        <div class="work-entry">
+          <h3>Data Scientist at Zally</h3>
+          <p class="work-dates">July 2023 - Present</p>
+          <p>At Zally, I am part of a forward-thinking team working on innovative solutions to eliminate the need for traditional passwords, enhancing security and user experience by leveraging data-driven insights and advanced authentication technologies.</p>
+          <ul class="skills-list">
+            <!-- List of skills used at Zally -->
+            <li>Python</li>
+            <li>Data Engineering</li>
+            <li>Data Preprocessing</li>
+            <li>AWS</li>
+            <li>Machine Learning</li>
+            <li>Model Deployment</li>
+            <li>Research</li>
+            <li>Experimentation</li>
+            <li>Statistical Analysis</li>
+            <!-- Add more as needed -->
+          </ul>
+        </div>
+        
+        <!-- Previous Independent Data Scientist Work -->
+        <div class="work-entry">
+          <h3>Independent Data Scientist</h3>
+          <p class="work-dates">June 2022 - Present</p>
+          <p>As an independent data scientist, I spearheaded various data projects, providing consultancy services and delivering actionable insights to drive decision-making and strategic initiatives for diverse clients across multiple industries.</p>
+          <ul class = 'skills-list'>
+            <li>Python</li>
+            <li>R</li>
+            <li>Data Scraping</li>
+            <li>t-SNE</li>
+            <li>Principle Component Analysis</li>
+            <li>Regression and Classification</li>
+            <li>Exploratory Analysis</li>
+            
+        </ul>
+        </div>
+    
+      <section id="projects">
+        <div class="section-header">
+          <h2>Projects</h2>
+        </div>
+        <p></p>
+
+        <div class="project-entry">
+            <h3>Reading Recommendation System</h3>
+            <img src="project-thumbnails/book-rec/5bookreco.png" alt="Reading Recommendation System Thumbnail" style="width:100%; max-width:300px; height:auto;">
+           <p>Developed a personalized book recommendation system using machine learning algorithms. The system analyzes user preferences and reading history to suggest new books that align with their interests.</p>
+            <ul class="skills-list">
+              <li>Machine Learning</li>
+              <li>Natural Language Processing</li>
+              <li>Python</li>
+              <li>Collaborative Filtering</li>
+              <li>Data Analysis</li>
+              <!-- Add more skills as needed -->
+            </ul>
+          </div>
+
+          <div class="project-entry">
+            <h3>Violent Crime in Lonodon using Bayesian Spatial Temporal Models</h3>
+            <img src="project-thumbnails/book-rec/bayesian-crime/map-1.png" alt="Bayesian Analysis Thumbnai Map 1l" style="width:100%; max-width:300px; height:auto;">
+            <img src="project-thumbnails/book-rec/bayesian-crime/map-2.png" alt="Bayesian Analysis Thumbnail Map 2" style="width:100%; max-width:300px; height:auto;">
+
+            <p>Conducted a comprehensive spatial-temporal analysis to understand geographical data trends over time using Bayesian statistical models. This project involved mapping data points and predicting future trends.</p>
+            <ul class="skills-list">
+              <li>Bayesian Statistics</li>
+              <li>Geospatial Analysis</li>
+              <li>R</li>
+              <li>Data Visualization</li>
+              <li>Statistical Modeling</li>
+              <li>WinBUGS</li>
+              <li>MCMC Simulation</li>
+              <!-- Add more skills as needed -->
+            </ul>
+          </div>
+          
+          
+        <!-- You can list individual projects here -->
+      </section>
+    
+      <section id="education">
+        <div class="section-header">
+          <h2>Education</h2>
+        </div>
+        <p></p>
+        <!-- List your educational qualifications here -->
+
+          <!-- Mathematics Degree Information -->
+  <div class="education-entry">
+    <h3>BSc Mathematics - University of Greenwich</h3>
+    <p>First Class Honors</p>
+    <ul class="education-modules">
+      <li>Linear Algebra</li>
+      <li>Probability and Statistics</li>
+      <li>Bayesian Inference</li>
+      <li>Financial Time Series</li>
+      <!-- Add more modules as needed -->
+    </ul>
+  </div>
+      </section>
+    
+      <section id="interests">
+        <div class="section-header">
+          <h2>Interests</h2>
+        </div>
+        <p>A brief overview of your personal interests and extracurricular activities.</p>
+        <!-- Talk about your interests here -->
+      </section></div>
+
+<div class="sidebar">
+        <!-- Profile picture section -->
+        <div class="sidebar-section profile-pic">
+          <img src="side-bar/profilepic.jpg" alt="Profile Picture">
+        </div>
+        
+        <!-- About Me section -->
+        <div class="sidebar-section">
+          <h3>About Me</h3>
+          <p>Short bio or introduction about yourself. Highlight your interests and what you're passionate about in the field of data science.</p>
+        </div>
+      
+        <!-- Contact details and links with icons -->
+        <div class="sidebar-section">
+          <h3>Contact Details</h3>
+          <a href="mailto:adilsaid64@gmail.com"><i class="fas fa-envelope icon"></i>Email</a>
+          <a href="https://www.linkedin.com/in/adil-s64" target="_blank"><i class="fab fa-linkedin icon"></i>LinkedIn</a>
+          <a href="https://github.com/adilsaid64" target="_blank"><i class="fab fa-github icon"></i>GitHub</a>
+          <!-- Add additional social links with icons here -->
+        </div>
+      </div>
+
+</body>
+</html>
