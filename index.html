@@ -5,104 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Your Data Science Portfolio</title>
 <style>
-body {
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.main-content, .sidebar {
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.main-content {
-  width: 75%;
-}
-
-.sidebar {
-  width: 25%;
-  background-color: #f4f4f4;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-}
-
-.sidebar img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 20px;
-}
-
-.sidebar a {
-  display: block;
-  margin-bottom: 10px;
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.sidebar a:hover {
-  color: #007bff;
-}
-
-.section-header {
-  background-color: #e8e8e8;
-  padding: 10px;
-  margin-top: 30px;
-  border-left: 5px solid #333;
-}
-
-.work-entry, .project-entry, .education-entry {
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
-  padding: 15px;
-  border-radius: 10px;
-}
-
-.skills-list {
-  list-style: none;
-  padding: 0;
-  margin: 8px 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.skills-list li {
-  background-color: #e0e0e0;
-  padding: 5px 10px;
-  margin: 5px;
-  border-radius: 5px;
-  font-size: 0.8em;
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    flex-direction: column;
-  }
-
-  .main-content, .sidebar {
-    width: 100%;
-  }
-
-  .sidebar {
-    height: auto;
-  }
-
-
-}
-
 
 </style>
 </head>
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
 <body>
 
 <div class="main-content">
@@ -160,6 +67,7 @@ body {
         <p></p>
 
         <div class="project-entry">
+          <a href="reading_recomendations.html" style="text-decoration: none; color: inherit;">
             <h3>Reading Recommendation System</h3>
             <img src="project-thumbnails/book-rec/5bookreco.png" alt="Reading Recommendation System Thumbnail" style="width:100%; max-width:300px; height:auto;">
            <p>Developed a personalized book recommendation system using machine learning algorithms. The system analyzes user preferences and reading history to suggest new books that align with their interests.</p>
@@ -171,6 +79,7 @@ body {
               <li>Data Analysis</li>
               <!-- Add more skills as needed -->
             </ul>
+          <a>
           </div>
 
           <div class="project-entry">
