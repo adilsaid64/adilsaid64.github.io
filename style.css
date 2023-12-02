@@ -91,3 +91,28 @@ body {
   
   }
   
+
+.work-entry {
+    display: flex;
+    align-items: start; /* Aligns items to the top */
+    background: #fff; /* Or any color/background of your choice */
+    padding: 20px; /* Adds space inside the card */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: Adds shadow for depth */
+    margin-bottom: 20px; /* Space between entries */
+}
+
+.company-logo {
+    flex-shrink: 0; /* Prevents the logo from shrinking */
+    margin-right: 20px; /* Space between logo and text */
+    max-width: 100px; /* Adjust width as needed */
+    height: auto; /* Keeps the aspect ratio */
+}
+
+.company-logo img {
+    width: 100%; /* Ensures the image fills the container */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.work-entry-content {
+    flex-grow: 1; /* Allows the content to take up remaining space */
+}
