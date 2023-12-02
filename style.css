@@ -87,6 +87,19 @@ body {
     .sidebar {
       height: auto;
     }
+  .work-entry {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center-align items for a better look */
+  }
+
+  .company-logo {
+      margin-right: 0; /* Remove margin-right as it's now on top */
+      margin-bottom: 20px; /* Add some space below the logo */
+  }
+
+  .work-entry-content {
+      width: 100%; /* Ensures content takes full width */
+  }
   
   
   }
