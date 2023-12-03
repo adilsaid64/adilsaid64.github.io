@@ -189,12 +189,3 @@ section {
   padding-top: 70px; /* Adjust this value based on your navbar's height */
   margin-top: -70px; /* Negative margin to counteract the padding */
 }
-
-.nav-links a {
-  white-space: nowrap; /* Prevents text from wrapping */
-  overflow: hidden; /* Keeps the text within the container */
-  text-overflow: ellipsis; /* Adds an ellipsis if the text is too long */
-  display: block; /* Makes each link full width */
-  text-align: center; /* Centers the text */
-  padding: 5px 10px; /* Adjust padding as needed */
-}
