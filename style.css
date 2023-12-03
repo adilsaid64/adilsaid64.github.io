@@ -101,15 +101,6 @@ body {
       width: 100%; /* Ensures content takes full width */
   }  
 
-  .nav-links li {
-    flex-grow: 1; /* Allows each nav item to grow and fill the available space */
-}
-
-.nav-links a {
-    font-size: 14px; /* Smaller font size for small screens */
-    padding: 5px 5px; /* Smaller padding for small screens */
-}
-
   }
   
 
