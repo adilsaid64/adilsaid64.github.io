@@ -101,6 +101,15 @@ body {
       width: 100%; /* Ensures content takes full width */
   }  
 
+  #typing-text {
+    font-size: 16px; /* Smaller font size for smaller screens */
+    margin: 0 10px; /* Adjust margins as needed */
+  }
+
+  h2#dynamic-text {
+    font-size: 14px; /* Adjust secondary text size */
+  }
+
   }
   
 
@@ -210,4 +219,37 @@ section {
     -ms-overflow-style: none; /* For Internet Explorer and Edge */
     scrollbar-width: none; /* For Firefox */
   }
+}
+
+.hobby-image {
+  max-width: 200px; /* Maximum width of the images */
+  max-height: 200px; /* Maximum height of the images */
+  margin: 10px; /* Spacing around each image */
+  border: 2px solid #ccc; /* Border around images */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.section-header {
+  margin-bottom: 20px; /* Spacing below the section header */
+}
+
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+#typing-text {
+  overflow: hidden; /* Ensures the content is clipped */
+  border-right: .15em solid black; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Centering the text */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
 }
