@@ -224,8 +224,8 @@ section {
 .hobby-image {
   max-width: 200px;  /* Maximum width of the images */
   max-height: 200px; /* Maximum height of the images */
-  margin: 10px;      /* Spacing around each image */
-  border: 2px solid #ccc; /* Border around images */
+  margin: 1px;      /* Spacing around each image */
+  border: 1px solid #ccc; /* Border around images */
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
@@ -234,7 +234,7 @@ section {
   .hobby-image {
     max-width: 100px;  /* Smaller maximum width */
     max-height: 100px; /* Smaller maximum height */
-    margin: 5px;       /* Smaller margin */
+    margin: 1px;       /* Smaller margin */
     border: 1px solid #ccc; /* Thinner border */
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Smaller shadow */
   }
