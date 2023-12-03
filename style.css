@@ -295,3 +295,10 @@ h3 {
 }
 
 /* You can add more styles for h4, h5, and h6 if needed */
+
+.skill-icon {
+  width: 70px; /* Adjust as needed */
+  height: auto;
+  margin: 5px;
+  /* Add more styling as needed */
+}
