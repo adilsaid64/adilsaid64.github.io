@@ -43,7 +43,6 @@ h3 {
 <div class="main-content">
   <section>
     <h1 id="typing-text">Welcome to my Portfolio! I'm Adil.</h1>
-    <h2 id="dynamic-text"></h2>
   </section>
   
 
@@ -236,39 +235,6 @@ h3 {
           <!-- Add additional social links with icons here -->
         </div>
       </div>
-
-
-      <script>
-
-const phrases = ['a Data Scientist', 'a Runner', 'a Fast and Lifelong Learner', 'a Problem Solver'];
-let currentPhrase = 0;
-let currentCharacter = 0;
-let element = document.getElementById('dynamic-text');
-
-function type() {
-  if (currentCharacter < phrases[currentPhrase].length) {
-    element.innerHTML += phrases[currentPhrase].charAt(currentCharacter);
-    currentCharacter++;
-    setTimeout(type, 200);
-  } else {
-    setTimeout(erase, 2000);
-  }
-}
-
-function erase() {
-  if (currentCharacter > 0) {
-    element.innerHTML = phrases[currentPhrase].substring(0, currentCharacter - 1);
-    currentCharacter--;
-    setTimeout(erase, 100);
-  } else {
-    currentPhrase = (currentPhrase + 1) % phrases.length;
-    setTimeout(type, 200);
-  }
-}
-
-setTimeout(type, 3500);  // Start typing effect after the initial text animation
-
-      </script>
 
 
 </body>
