@@ -265,3 +265,33 @@ section {
   from, to { border-color: transparent }
   50% { border-color: black; }
 }
+
+
+
+/* General Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif; /* Use a web-friendly font */
+  color: #333; /* A dark shade for text */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 36px; /* Large size for main heading */
+  color: #000000; /* A distinct color for the main title */
+  text-align: center; /* Center align the main title */
+}
+
+h2 {
+  font-size: 30px; /* Slightly smaller for section headings */
+  color: #000000; /* A slightly different shade for differentiation */
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 24px; /* Smaller size for subheadings */
+  color: #000000; /* Darker shade for subheadings */
+}
+
+/* You can add more styles for h4, h5, and h6 if needed */
