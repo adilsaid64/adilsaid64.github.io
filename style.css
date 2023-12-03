@@ -43,6 +43,19 @@ body {
   .sidebar a:hover {
     color: #1abc9c;
   }
+
+  .icon-container {
+    display: flex; /* Enables Flexbox */
+    align-items: center; /* Vertically center the items */
+    justify-content: start; /* Align items to the start of the container */
+    gap: 10px; /* Adds spacing between the icons */
+  }
+  
+  .icon {
+    font-size: 24px; /* Adjust this value to increase or decrease the size of the icons */
+  }
+  
+  
   
   .section-header {
     background-color: #e8e8e8;
@@ -221,24 +234,32 @@ section {
   }
 }
 
-.hobby-image {
-  max-width: 200px;  /* Maximum width of the images */
-  max-height: 200px; /* Maximum height of the images */
-  margin: 1px;      /* Spacing around each image */
-  border: 1px solid #ccc; /* Border around images */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+.hobby-images-container {
+  display: flex;
+  flex-wrap: wrap; /* This allows items to wrap onto the next line if needed */
+  justify-content: center; /* This centers the images in the container */
+  align-items: center; /* This vertically aligns images */
+  gap: 2px; /* This adds a gap between images */
 }
 
-/* Media query for screens less than or equal to 600px wide */
+.hobby-image {
+  flex: 0 1 auto; /* This allows the image to grow and shrink but not beyond its content */
+  max-width: 200px;
+  max-height: 200px;
+  margin: 1px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjustments for smaller screens */
 @media (max-width: 600px) {
   .hobby-image {
-    max-width: 100px;  /* Smaller maximum width */
-    max-height: 100px; /* Smaller maximum height */
-    margin: 1px;       /* Smaller margin */
-    border: 1px solid #ccc; /* Thinner border */
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Smaller shadow */
+    max-width: 200px; /* Maintain the same max-width */
+    max-height: 200px; /* Maintain the same max-height */
+    /* Other styles remain the same */
   }
 }
+
 
 
 .section-header {
@@ -301,4 +322,13 @@ h3 {
   height: auto;
   margin: 5px;
   /* Add more styling as needed */
+}
+
+
+
+.scrollable-content {
+  max-height: 300px; /* Adjust the height as needed */
+  overflow-y: auto; /* This will add a vertical scrollbar when content overflows */
+  padding: 10px; /* Optional: Adds some spacing inside the container */
+
 }
