@@ -1,260 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Data Science Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+
+
 <style>
+  .my-skill-col {
+      padding-left: 5px; /* Reduced left padding */
+      padding-right: 5px; /* Reduced right padding */
+  }
 </style>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 <body>
+    <header>
+        <!-- Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Data Science Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 
-<div class="main-content">
-  <section>
-    <h1 id="typing-text">Welcome to my Portfolio! I'm Adil.</h1>
-  </section>
-  
-
-      <nav class="top-nav">
-        <div class="nav-container">
-            <ul class="nav-links">
-                <li><a href="#work-experience">Work Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skillset">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#interests">Interests</a></li>
-            </ul>
-        </div>
-    </nav>
-    
-    
-      <section id="work-experience">
-        <div class="section-header">
-          <h2>Work Experience</h2>
-        </div>
-
-        <!-- Current Work at Zally -->
-        <div class="work-entry">
-          <div class="company-logo">
-              <!-- Replace with the actual path to Zally's logo -->
-              <img src="zally-logo.jpeg" alt="Zally Logo">
-          </div>
-          <div class="work-entry-content">
-              <h3>Data Scientist at Zally</h3>
-              <p class="work-dates">July 2023 - Present</p>
-              <p>At Zally, I am part of a forward-thinking team working on innovative solutions to eliminate the need for traditional passwords, enhancing security and user experience by leveraging data-driven insights and advanced authentication technologies.</p>
-              <ul class="skills-list">
-                <!-- List of skills used at Zally -->
-                <li>Python</li>
-                <li>Data Engineering</li>
-                <li>Data Preprocessing</li>
-                <li>AWS</li>
-                <li>Machine Learning</li>
-                <li>Model Deployment</li>
-                <li>Research</li>
-                <li>Experimentation</li>
-                <li>Statistical Analysis</li>
-                <!-- Add more as needed -->              </ul>
-          </div>
-        </div>
-
-        
-        <!-- INDP DS -->
-        <div class="work-entry">
-          <div class="company-logo">
-              <!-- Replace with the actual path to Zally's logo -->
-              <img src="IDP-DS.png" alt="IDP-DS-logo">
-          </div>
-          <div class="work-entry-content">
-              <h3>Independent Data Scientist</h3>
-              <p class="work-dates">June 2022 - Present</p>
-              <p>Beginning my career as an independent data scientist, I constantly advanced my skills through courses and Kaggle projects. This journey led to significant personal initiatives, such as developing a recommendation system and analyzing London crime data, and I continue to embrace continuous learning in data analysis and machine learning.</p>
-              <ul class="skills-list">
-                <!-- List of skills used at Zally -->
-                <li>Python</li>
-                <li>R</li>
-                <li>Data Scraping</li>
-                <li>t-SNE</li>
-                <li>Principle Component Analysis</li>
-                <li>Regression and Classification</li>
-                <li>Exploratory Analysis</li>   
-                <!-- Add more as needed -->              </ul>
-          </div>
-        </div>
-
-    
-      <section id="projects">
-        <div class="section-header">
-          <h2>Projects</h2>
-        </div>
-        <p></p>
-
-        <div class="project-entry">
-          <a href="https://github.com/adilsaid64/london-crime" style="text-decoration: none; color: inherit;">
-            <h3>Mapping Crime in the Capital: A Decadal Spatial-Temporal Study of Crime in London</h3>
-            <!-- <img src="project-thumbnails/bayesian-crime/download.png" alt="Bayesian Analysis Thumbnai Map 1l" style="width:100%; max-width:300px; height:auto;">
-            <img src="project-thumbnails/bayesian-crime/Screenshot from 2023-11-14 23-47-14.png" alt="Bayesian Analysis Thumbnai Map 1l" style="width:100%; max-width:300px; height:auto;">
-            <img src="project-thumbnails/bayesian-crime/Screenshot from 2023-11-14 23-51-15.png" alt="Bayesian Analysis Thumbnai Map 1l" style="width:100%; max-width:300px; height:auto;">
-            <img src="project-thumbnails/bayesian-crime/Screenshot from 2023-11-15 00-07-00.png" alt="Bayesian Analysis Thumbnai Map 1l" style="width:100%; max-width:300px; height:auto;">
-            -->
-            <img src="london-crime-gif.gif" alt="Bayesian Analysis Thumbnail Map 1" style="width:100%; max-width:450; height:auto;">
-
-            <p>Conducted a comprehensive spatial-temporal analysis to understand geographical data trends over time using Bayesian statistical models. This project involved mapping data points and predicting future trends.</p>
-            <ul class="skills-list">
-              <li>Bayesian Statistics</li>
-              <li>Geospatial Analysis</li>
-              <li>Exploratory Data Analysis</li>
-              <li>R</li>
-              <li>Data Visualization</li>
-              <li>Statistical Modeling</li>
-              <li>WinBUGS</li>
-              <li>MCMC Simulation</li>
-              <!-- Add more skills as needed -->
-            </ul>
-          </a>
-        </div>
-
-
-        <div class="project-entry">
-          <a href="https://github.com/adilsaid64/book-rec-system" style="text-decoration: none; color: inherit;">
-            <h3>Reading Recommendation System</h3>
-            <!-- <img src="project-thumbnails/book-rec/1home.png" alt="Reading Recommendation System Thumbnail" style="width:100%; max-width:300px; height:auto;">
-            <img src="project-thumbnails/book-rec/2search.png" alt="Reading Recommendation System Thumbnail" style="width:100%; max-width:300px; height:auto;">
-            <img src="project-thumbnails/book-rec/5bookreco.png" alt="Reading Recommendation System Thumbnail" style="width:100%; max-width:300px; height:auto;">
-            -->
-            <img src="book-rec-gif.gif" alt="Book Rec" style="width:100%; max-width:450; height:auto;">
-
-           <p>This project involves building a book recommendation system that incorporates both a search engine and personalized recommendations using collaborative filtering.
-
-            The system allows users to search for books by titles and author names. Users can then rate the books they have read, and create user profiles.
-            
-            These user profiles are then used to generate personalized book recommendations using collaborative filtering techniques. The system aims to provide users with relevant book suggestions based on their preferences and the ratings of similar users.
-            
-            The system was then deployed onto a web application using Flask.</p>
-            <ul class="skills-list">
-              <li>Machine Learning</li>
-              <li>Natural Language Processing</li>
-              <li>Python</li>
-              <li>Collaborative Filtering</li>
-              <li>Data Analysis</li>
-              <li>Flask</li>
-              <li>End to End</li>
-              <!-- Add more skills as needed -->
-            </ul>
-          <a>
-          </div>
-
-            
-        <!-- You can list individual projects here -->
-      </section>
-
-
-      <section id="skillset">
-        <div class="section-header">
-          <h2>Skills</h2>
-        </div>
-        <div class="work-entry">
-          <div class="skills-icons">
-            <img src="Python.png" alt="Python" class="skill-icon">
-            <img src="Pandas.png" alt="Pandas" class="skill-icon">
-            <img src="NumPy.png" alt="NumPy" class="skill-icon">
-            <img src="scikit-learn.png" alt="Scikit-Learn" class="skill-icon">
-            <img src="Matplotlib.png" alt="Matplotlib" class="skill-icon">
-            <img src="Ploty.png" alt="Ploty" class="skill-icon">
-
-          
-            <img src="Flask.png" alt="Flask" class="skill-icon">
-            <img src="Jupyter.png" alt="Jupyter" class="skill-icon">
-            <img src="MATLAB.png" alt="MATLAB" class="skill-icon">
-
-            <img src="R.png" alt="R" class="skill-icon">
-            <img src="Anaconda.png" alt="Anaconda" class="skill-icon">
-            <img src="Git.png" alt="GIT" class="skill-icon">
-            <img src="AWS.png" alt="AWS" class="skill-icon">
-            <img src="Azure Devops.png" alt="Azure" class="skill-icon">
-
-            <img src="HTML5.png" alt="html" class="skill-icon">
-            <img src="CSS3.png" alt="css" class="skill-icon">
-             </div>
-          </div>
-      </section>
-      
-
-      <section id="education">
-        <div class="section-header">
-          <h2>Education</h2>
-        </div>
-        <p></p>
-
-        <!-- Current Work at Zally -->
-        <div class="work-entry">
-          <div class="company-logo">
-              <!-- Replace with the actual path to Zally's logo -->
-              <img src="uni-logo.jpeg" alt="Uni Logo">
-          </div>
-          <div class="work-entry-content">
-              <h3>BSc H Mathematics - University of Greenwich</h3>
-              <p class="work-dates">September 2019 - July 2023</p>
-              <p>Grade: First Class Honors</p>
-              <p>Relvent Modules: Linear Algebra, Vector Calculus, Partial Differntial Equations, Optimisation</p>
-              <ul class="skills-list">
-                <!-- List of skills used at Zally -->
-                <li>Linear Algebra</li>
-                <li>Probability and Statistics</li>
-                <li>Bayesian Inference</li>
-                <li>Financial Time Series</li>
-                <!-- Add more as needed -->              </ul>
-          </div>
-        </div>
-
-        <section id="interests">
-          <div class="section-header">
-            <h2>Interests</h2>
-          </div>
-          <div class="work-entry">
-            <div class="hobby-images-container">
-              <img src="running.jpg" alt="Running Pic" class="hobby-image">
-              <img src="football.jpg" alt="football GIF" class="hobby-image">
-              <img src="climbing.gif" alt="Climbing GIF" class="hobby-image">
+                </ul>
             </div>
-        </div>
+        </nav>
+    </header>
+
+    <main class="container">
+                
+        <section id="experience" class="my-5">
+            <h2>Work Experience</h2>
+            <div class="card-deck">
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <img src="zally-logo.jpeg" alt="Company Logo" class="img-fluid" style="max-height: 75px;"> <!-- Company Logo -->
+                        </div>
+                        <div class="col">
+                            <h5 class="card-title">Data Scientist at Zally</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">July 2023 - Present</h6>
+                            <p class="card-text">At Zally, I am part of a forward-thinking team working on innovative solutions to eliminate the need for traditional passwords, enhancing security and user experience by leveraging data-driven insights and advanced authentication technologies.</p>
+                            <div>
+                                <span class="badge badge-success">Python</span>
+                                <span class="badge badge-success">Data Engineering</span>
+                                <span class="badge badge-success">Data Preprocessing</span>
+                                <span class="badge badge-success">AWS</span>
+                                <span class="badge badge-success">Machine Learning</span>
+                                <span class="badge badge-success">Model Deployment</span>
+                                <span class="badge badge-success">Research</span>
+                                <span class="badge badge-success">Experimentation</span>
+                                <span class="badge badge-success">Exploratory Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <img src="IDP-DS.png" alt="Company Logo" class="img-fluid" style="max-height: 75px;"> <!-- Company Logo -->
+                        </div>
+                        <div class="col">
+                            <h5 class="card-title">Independent Data Scientist</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">June 2022 - Present</h6>
+                            <p class="card-text">Beginning my career as an independent data scientist, I constantly advanced my skills through courses and Kaggle projects. This journey led to significant personal initiatives, such as developing a recommendation system and analyzing London crime data, and I continue to embrace continuous learning in data analysis and machine learning.</p>
+                            <div>
+                                <span class="badge badge-success">Python</span>
+                                <span class="badge badge-success">R</span>
+                                <span class="badge badge-success">Data Scraping</span>
+                                <span class="badge badge-success">t-SNE</span>
+                                <span class="badge badge-success">Principle Component Analysis</span>
+                                <span class="badge badge-success">Regression and Classification</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
         </section>
         
-        </div>
         
-          
-
-<div class="sidebar">
-        <!-- Profile picture section -->
-        <div class="sidebar-section profile-pic">
-          <img src="side-bar/profilepic.jpg" alt="Profile Picture">
-        </div>
         
-        <!-- About Me section -->
-        <div class="sidebar-section">
-          <h3>About Me</h3>
-          <div class="scrollable-content">
-          <p>I started my programming journey at age 12, making games for PCs and mobiles with Unity3D. My first languages were JavaScript and C#. I learned to code by following online tutorials and practicing regularly. I successfully published several games on the Google Play Store, which were my proud creations at the time. Although they were later removed due to terms of service updates, you can still find the APKs on third-party sites by searching for 'Adil Said platform games.'</p>
+        <section id="projects" class="my-5">
+            <h2>Projects</h2>
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mapping Crime in the Capital: A Decadal Spatial-Temporal Study of Crime in London</h5>
+                        <img src="london-crime-gif.gif" alt="Project 1 Thumbnail" class="card-img-top"> <!-- Project Thumbnail -->
 
-          <p>At 19, I began studying mathematics at university, where I developed a passion for statistics and machine learning. This led me to explore data science as a hobby in my second year. I learned Python and started applying real-world analysis techniques, combining my university education with what I learned from online courses. This experience helped me greatly, and after graduating, I landed my first job as a data scientist at Zally, focusing on solving password security issues with continuous authentication.</p>
-            
-          <p>Outside of data science, I'm passionate about playing football, working out at the gym, rock climbing, exploring new places, and spending time with friends and family.</p>
-        </div>
-      </div>
-      
-      <div class="sidebar-section">
-        <h3>Contact Details</h3>
-        <div class="icon-container">
+                        <p class="card-text">Conducted a comprehensive spatial-temporal analysis to understand geographical data trends over time using Bayesian statistical models. This project involved mapping data points and predicting future trends.</p>
+                        <div>
+                            <span class="badge badge-success">Geospatial Analysis</span>
+                            <span class="badge badge-success">Time Series analysis</span>
+                            <span class="badge badge-success">Data Visulization</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Reading Recommendation System</h5>
+                        <img src="book-rec-gif.gif" alt="Project 2 Thumbnail" class="card-img-top"> <!-- Project Thumbnail -->
+
+                        <p class="card-text">This project involves building a book recommendation system that incorporates both a search engine and personalized recommendations using collaborative filtering. The system allows users to search for books by titles and author names. Users can then rate the books they have read, and create user profiles. These user profiles are then used to generate personalized book recommendations using collaborative filtering techniques. The system aims to provide users with relevant book suggestions based on their preferences and the ratings of similar users. The system was then deployed onto a web application using Flask./p>
+                        <div>
+                            <span class="badge badge-success">Machine Learning</span>
+                            <span class="badge badge-success">Natrual Language Processing</span>
+                            <span class="badge badge-success">Python</span>
+                            <span class="badge badge-success">Flask</span>
+                            <span class="badge badge-success">Collaborative Filtering</span>
+                            <span class="badge badge-success">End to End</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- More cards can be added similarly -->
+            </div>
+        </section>
+        
+
+        <section id="education" class="my-5">
+            <h2>Education</h2>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <img src="uni-logo.jpeg" alt="University Logo" class="img-fluid" style="max-height: 75px;"> <!-- University Logo -->
+                        </div>
+                        <div class="col">
+                            <h5 class="card-title">Bsc H Mathematics</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">University of Greenwich, 2019 - 2023</h6>
+                            <p class="card-text">Grade: First Class Honors
+
+                                Relvent Modules: Linear Algebra, Vector Calculus, Partial Differntial Equations, Optimisation
+
+                            </p>
+                            <div>
+                                <span class="badge badge-success">Machine Learning</span>
+                                <span class="badge badge-success">Statistical Analysis</span>
+                                <span class="badge badge-success">Python & R Programming</span>
+                                <span class="badge badge-success">Statistical Inference</span>
+                                <span class="badge badge-success">Probability</span>
+                                <span class="badge badge-success">Bayesian Inference</span>
+                                <span class="badge badge-success">Hypothesis Testing</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="skills" class="my-5">
+            <h2 class="card-title">Skills</h2>
+            <div class="card">
+                <div class="card-body">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Example Skill Item -->
+                            <div class="col-md-3 text-center px-1 my-skill-col"> <!-- Custom class for reduced padding -->
+                                <img src="Python.png" alt="Python" class="img-fluid mb-1"  style="max-width: 50px; height: auto;">
+                                <p class="skill-text">Python</p>
+                            </div>
+                            <!-- Repeat for other skills -->
+                            <div class="col-md-3 text-center px-1 my-skill-col"> <!-- Custom class for reduced padding -->
+                                <img src="Matplotlib.png" alt="Matplotlib" class="img-fluid mb-1"  style="max-width: 50px; height: auto;">
+                                <p class="skill-text">Matplotlib</p>
+                            </div>
+                            <!-- Add more columns for additional skills -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+               
+
+        <section id="interests" class="my-5">
+            <h2 class="card-title">Interests</h2>
+            <div class="card">
+                <div class="card-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="running.jpg" alt="Hobby 1" class="img-fluid mb-1"> <!-- Replace with your image path -->
+                                <!-- Optional caption or description -->
+                            </div>
+                            <div class="col-md-4">
+                                <img src="football.jpg" alt="Hobby 2" class="img-fluid mb-1"> <!-- Replace with your image path -->
+                                <!-- Optional caption or description -->
+                            </div>
+                            <div class="col-md-4">
+                                <img src="climbing.gif" alt="Hobby 3" class="img-fluid mb-1"> <!-- Replace with your image path -->
+                                <!-- Optional caption or description -->
+                            </div>
+                            <!-- Add more columns as needed for additional images -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="contact" class="my-5">
+            <h2>Contact</h2>
           <a href="mailto:adilsaid64@gmail.com"><i class="fas fa-envelope icon"></i></a>
           <a href="https://www.linkedin.com/in/adil-s64" target="_blank"><i class="fab fa-linkedin icon"></i></a>
           <a href="https://github.com/adilsaid64" target="_blank"><i class="fab fa-github icon"></i></a>
-          <!-- Add additional social links with icons here -->
-        </div>
-      </div>      
+        </section>
+    </main>
 
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
