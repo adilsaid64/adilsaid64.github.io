@@ -1,334 +1,274 @@
+#intro {
+  background-color: #9ac6f5;
+  color: #4a698b;
+}
+
+.info-section {
+  padding: 40px 0;
+}
+
+.info-block {
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #212529;
+  color: #fff;
+}
+
+/* Add any specific styling overrides or additional styles here */
+
 body {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .main-content, .sidebar {
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  .main-content {
-    width: 75%;
-  }
-  
-  .sidebar {
-    width: 25%;
-    background-color: #f4f4f4;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-  }
-  
-  .sidebar img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 20px;
-  }
-  
-  .sidebar a {
-    display: block;
-    margin-bottom: 10px;
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .sidebar a:hover {
-    color: #1abc9c;
-  }
-
-  .icon-container {
-    display: flex; /* Enables Flexbox */
-    align-items: center; /* Vertically center the items */
-    justify-content: start; /* Align items to the start of the container */
-    gap: 10px; /* Adds spacing between the icons */
-  }
-  
-  .icon {
-    font-size: 24px; /* Adjust this value to increase or decrease the size of the icons */
-  }
-  
-  
-  
-  .section-header {
-    background-color: #e8e8e8;
-    padding: 10px;
-    margin-top: 30px;
-    border-left: 5px solid #333;
-  }
-  
-  .work-entry, .project-entry, .education-entry {
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 10px;
-  }
-  
-  .skills-list {
-    list-style: none;
-    padding: 0;
-    margin: 8px 0;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .skills-list li {
-    background-color: #e0e0e0;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 5px;
-    font-size: 0.8em;
-  }
-  
-  @media screen and (max-width: 768px) {
-    body {
-      flex-direction: column;
-    }
-  
-    .main-content, .sidebar {
-      width: 100%;
-    }
-  
-    .sidebar {
-      height: auto;
-    }
-  .work-entry {
-      flex-direction: column; /* Stack elements vertically */
-      align-items: center; /* Center-align items for a better look */
-  }
-
-  .company-logo {
-      margin-right: 0; /* Remove margin-right as it's now on top */
-      margin-bottom: 20px; /* Add some space below the logo */
-  }
-
-  .work-entry-content {
-      width: 100%; /* Ensures content takes full width */
-  }  
-
-  #typing-text {
-    font-size: 16px; /* Smaller font size for smaller screens */
-    margin: 0 10px; /* Adjust margins as needed */
-  }
-
-  h2#dynamic-text {
-    font-size: 14px; /* Adjust secondary text size */
-  }
-
-  }
-  
-
-.work-entry {
-    display: flex;
-    align-items: start; /* Aligns items to the top */
-    background: #fff; /* Or any color/background of your choice */
-    padding: 20px; /* Adds space inside the card */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: Adds shadow for depth */
-    margin-bottom: 20px; /* Space between entries */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #333; /* Switched to a softer color for better readability */
 }
 
-.company-logo {
-    flex-shrink: 0; /* Prevents the logo from shrinking */
-    margin-right: 20px; /* Space between logo and text */
-    max-width: 100px; /* Adjust width as needed */
-    height: auto; /* Keeps the aspect ratio */
-}
 
-.company-logo img {
-    width: 100%; /* Ensures the image fills the container */
-    height: auto; /* Maintains aspect ratio */
-}
-
-.work-entry-content {
-    flex-grow: 1; /* Allows the content to take up remaining space */
-}
-
-/* Top Nav CSS */
-.top-nav {
-  background-color: #2c3e50; /* Dark shade for professional look */
-  color: white;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-}
-
-/* Nav Container CSS */
-.nav-container {
-  max-width: 1200px; /* Max width for content inside nav */
-  margin: 0 auto; /* Center align the nav content */
-  padding: 10px 20px; /* Padding for breathing space */
-}
-
-/* Nav Links CSS */
-.nav-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex; /* Flex layout for inline and center alignment */
-  justify-content: center; /* Center items in the nav */
-  align-items: center; /* Vertically align items */
-}
-
-.nav-links li {
-  margin: 0 15px; /* Spacing between nav items */
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px; /* Slightly larger font size */
-  transition: color 0.3s ease;
-  padding: 5px 10px; /* Padding for larger clickable area */
-}
-
-.nav-links a:hover,
-.nav-links a:focus {
-  color: #1abc9c; /* Highlight color on hover and focus */
-  border-bottom: 2px solid #1abc9c; /* Underline effect on hover */
-}
-
-/* Section CSS */
 section {
-  padding-top: 70px; /* Adjust this value based on your navbar's height */
-  margin-top: -70px; /* Negative margin to counteract the padding */
+  padding: 60px 0;
 }
 
-/* Responsive Nav CSS */
-@media (max-width: 768px) {
-  .nav-container {
-    overflow-x: auto; /* Allows horizontal scrolling */
-    white-space: nowrap; /* Prevents the nav items from wrapping */
-  }
-
-  .nav-links {
-    display: inline-flex; /* Use inline-flex to align items in a line */
-    padding-bottom: 10px; /* Adds space at the bottom, useful for scrolling */
-  }
-
-  .nav-links li {
-    margin-right: 20px; /* Space between items */
-  }
-
-  .nav-links a {
-    display: block; /* Each link is a block for better click area */
-  }
-
-  /* Removes scrollbar appearance but keeps functionality (optional) */
-  .nav-container::-webkit-scrollbar {
-    display: none;
-  }
-
-  .nav-container {
-    -ms-overflow-style: none; /* For Internet Explorer and Edge */
-    scrollbar-width: none; /* For Firefox */
-  }
+section h2 {
+  color: #9ac6f5; /* Retain the chosen color */
+  margin-bottom: 40px;
+  font-weight: 700; /* Make the headings bolder for emphasis */
+  letter-spacing: 1.5px; /* Increase letter spacing for a modern touch */
+  font-size: 1.75rem; /* Slightly larger font size for prominence */
+  border-bottom: 2px solid #9ac6f5; /* Add a bottom border for definition */
+  display: inline-block; /* Required for the border to fit the text width */
+  padding-bottom: 5px; /* Padding to space out the text from the border */
 }
 
-.hobby-images-container {
+
+.card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.card-body {
+  padding: 20px;
+  text-align: left;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+footer {
+  background-color: #343a40;
+  color: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Add responsive design adjustments if necessary */
+
+.card-logo {
+  height: 60px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.card-title {
   display: flex;
-  flex-wrap: wrap; /* This allows items to wrap onto the next line if needed */
-  justify-content: center; /* This centers the images in the container */
-  align-items: center; /* This vertically aligns images */
-  gap: 2px; /* This adds a gap between images */
+  align-items: center;
+  font-size: 1.25rem;
+  margin-bottom: 10px; /* Space between title and subtitle */
 }
 
-.hobby-image {
-  flex: 0 1 auto; /* This allows the image to grow and shrink but not beyond its content */
-  max-width: 200px;
-  max-height: 200px;
-  margin: 1px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+.card-title > div {
+  display: flex;
+  flex-direction: column;
 }
 
-/* Adjustments for smaller screens */
-@media (max-width: 600px) {
-  .hobby-image {
-    max-width: 200px; /* Maintain the same max-width */
-    max-height: 200px; /* Maintain the same max-height */
-    /* Other styles remain the same */
+.card-subtitle {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.project-thumbnail {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 5px; /* Optional: for rounded corners */
+}
+
+.skill-badges .badge {
+  display: inline-block;
+  background-color: #9ac6f5; /* Bootstrap primary color */
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  text-transform: uppercase; /* Optional: for uppercase styling */
+}
+
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card-text strong {
+  color: #007bff; /* Blue color for section titles */
+}
+
+
+.skill-card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  text-align: center;
+}
+
+.skill-card:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.skill-logo {
+  max-width: 60px; /* Adjust size as needed */
+  height: auto;
+  margin: 10px auto; /* Center logo in the card */
+  display: block;
+}
+
+.hobby-gif {
+  width: 100%;
+  height: auto;
+  border-radius: 5px; /* Optional: for rounded corners */
+}
+
+.social-icons {
+  margin: 10px 0;
+}
+
+.social-icon {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #9ac6f5; /* Or any color you prefer */
+}
+
+.footer h5 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+/* General Navigation Bar Styles */
+.navbar {
+  background-color: #343a40; /* Dark background for a modern look */
+  padding: 0.8rem 1rem;
+  border-bottom: 3px solid #9ac6f5; /* Accent border */
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #9ac6f5 !important; /* Accent color for brand */
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+  color: #9ac6f5 !important; /* Slightly lighter color on hover */
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff !important;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Responsive Navbar Collapse */
+@media (max-width: 991px) {
+  .navbar-collapse {
+      background-color: #343a40;
+      padding: 1rem;
+  }
+
+  .navbar-nav .nav-item {
+      margin-bottom: 0.7rem;
   }
 }
 
 
-
-.section-header {
-  margin-bottom: 20px; /* Spacing below the section header */
+#intro {
+  background-color: #f8f9fa; /* Light background */
+  padding: 60px 0; /* Spacious layout */
 }
 
-
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+.display-4 {
+  color: #007bff; /* Vibrant color for the name */
+  margin-bottom: 20px; /* Spacing */
 }
 
-#typing-text {
-  overflow: hidden; /* Ensures the content is clipped */
-  border-right: .15em solid black; /* The typewriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Centering the text */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+.lead {
+  font-size: 1.2rem; /* Emphasized font size */
+  margin-bottom: 30px; /* Spacing */
 }
 
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: black; }
+.typing-effect {
+  font-size: 1.2rem; /* Match the lead font size */
+  font-weight: bold;
+  color: #6c757d; /* Subtle color for typing effect */
+  display: inline; /* Inline with the preceding text */
+  white-space: nowrap; /* Keeps text on the same line */
+  border-right: 2px solid; /* Cursor effect */
+  animation: blink 0.7s step-end infinite;
 }
 
-
-
-/* General Heading Styles */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', sans-serif; /* Use a web-friendly font */
-  color: #333; /* A dark shade for text */
-  margin-top: 20px;
-  margin-bottom: 10px;
-  line-height: 1.2;
+@keyframes blink {
+  50% {
+      border-color: transparent;
+  }
 }
 
-h1 {
-  font-size: 36px; /* Large size for main heading */
-  color: #000000; /* A distinct color for the main title */
-  text-align: center; /* Center align the main title */
+.display-4 {
+  font-family: 'Open Sans', sans-serif; /* Using Open Sans */
+  font-size: 2.8rem; /* Slightly larger for impact */
+  font-weight: 700; /* Bold weight */
+  color: #0056b3; /* A deep blue for a professional look */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 20px; /* Adequate spacing from the next element */
+  transition: color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
 }
 
-h2 {
-  font-size: 30px; /* Slightly smaller for section headings */
-  color: #000000; /* A slightly different shade for differentiation */
-  padding-bottom: 5px;
+.display-4:hover {
+  color: #007bff; /* Lighter blue on hover for interactivity */
+  transform: translateY(-5px); /* Slight upward shift on hover */
 }
 
-h3 {
-  font-size: 24px; /* Smaller size for subheadings */
-  color: #000000; /* Darker shade for subheadings */
-}
-
-/* You can add more styles for h4, h5, and h6 if needed */
-
-.skill-icon {
-  width: 70px; /* Adjust as needed */
-  height: auto;
-  margin: 5px;
-  /* Add more styling as needed */
-}
-
-
-
-.scrollable-content {
-  max-height: 300px; /* Adjust the height as needed */
-  overflow-y: auto; /* This will add a vertical scrollbar when content overflows */
-  padding: 10px; /* Optional: Adds some spacing inside the container */
-
+.about-image {
+  border: 3px solid #007bff; /* Optional: border to highlight the image */
 }

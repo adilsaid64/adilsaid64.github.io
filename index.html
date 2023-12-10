@@ -3,357 +3,412 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Data Science Portfolio</title>
+    <title>Personal Portfolio</title>
     <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-
-
-<style>
-  .my-skill-col {
-      padding-left: 5px; /* Reduced left padding */
-      padding-right: 5px; /* Reduced right padding */
-  }
-
-  .container-fluid {
-    width: 75%;
-    max-width: 75%;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-}
-
-body {
-    background-color: rgb(255, 255, 255);
-    color: #000000; /* Dark grey for text */
-}
-
-.badge{
-    color:  rgb(255, 255, 255);
-}
-
-a, .navbar-brand, .nav-link {
-    color:  rgb(81, 70, 179);
-}
-
-section {
-    padding: 10px 0;
-}
-
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-footer {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding: 20px 0;
-}
-
-.card {
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
-}
-
-
-
-</style>
 </head>
-
 <body>
-    <header>
-        <!-- Bootstrap Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Welcome to my Portfolio! I'm Adil.</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#work-experience">Work Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-me">About me</a></li>
 
                 </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main class="container-fluid">
+<!-- Intro Section -->
+<section id="intro" class="py-5 text-center bg-light">
+    <div class="container">
+        <h1 class="display-4">Hello, I'm Adil</h1>
+        <p class="lead">Exploring the world through data and innovation | <span id="typing-effect" class="typing-effect"></span></p>
+    </div>
+</section>
 
-        <section id="experience" class="my-5">
-            <h2>Work Experience</h2>
-            <div class="card-deck">
 
-            <div class="card">
-                <div class="card-body">
-                    <div class="row align-items-center">
-                        <div class="col-auto">
-                            <img src="zally-logo.jpeg" alt="Company Logo" class="img-fluid" style="max-height: 75px;"> <!-- Company Logo -->
-                        </div>
-                        <div class="col">
-                            <h5 class="card-title">Data Scientist at Zally</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">July 2023 - Present</h6>
-                            <p class="card-text">At Zally, I am part of a forward-thinking team working on innovative solutions to eliminate the need for traditional passwords, enhancing security and user experience by leveraging data-driven insights and advanced authentication technologies.</p>
-                            <div>
-                                <span class="badge badge-success">Python</span>
-                                <span class="badge badge-success">Data Engineering</span>
-                                <span class="badge badge-success">Data Preprocessing</span>
-                                <span class="badge badge-success">AWS</span>
-                                <span class="badge badge-success">Machine Learning</span>
-                                <span class="badge badge-success">Model Deployment</span>
-                                <span class="badge badge-success">Research</span>
-                                <span class="badge badge-success">Experimentation</span>
-                                <span class="badge badge-success">Exploratory Analysis</span>
-                            </div>
-                        </div>
-                    </div>
+
+
+ <!-- Work Experience Section -->
+ <section id="work-experience" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Work Experience</h2>
+        <div class="row">
+<!-- Work Experience Entry -->
+<div class="col-lg-6 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title">
+                <img src="zally-logo.jpeg" alt="zally-logo Logo" class="card-logo">
+                <div>
+                    <h5>Data Scientist at Zally</h5>
+                    <p class="card-subtitle">July 2023 - Present</p>
                 </div>
             </div>
+            <p class="card-text">At Zally, I am part of a forward-thinking team working on innovative solutions to eliminate the need for traditional passwords, enhancing security and user experience by leveraging data-driven insights and advanced authentication technologies.</p>
+            <!-- Skill Badges -->
+            <div class="skill-badges">
+                <span class="badge">Python</span>
+                <span class="badge">Data Engineering</span>
+                <span class="badge">Data Preprocessing</span>
+                <span class="badge">AWS</span>
+                <span class="badge">Machine Learning</span>
+                <span class="badge">Model Deployment</span>
+                <span class="badge">Research</span>
+                <span class="badge">Experimentation</span>
+                <span class="badge">Exploratory Analysis</span>
+                
+                <!-- Add more badges as needed -->
+            </div>
+        </div>
+    </div>
+</div>
 
-            <div class="card">
-                <div class="card-body">
-                    <div class="row align-items-center">
-                        <div class="col-auto">
-                            <img src="IDP-DS.png" alt="Company Logo" class="img-fluid" style="max-height: 75px;"> <!-- Company Logo -->
-                        </div>
-                        <div class="col">
-                            <h5 class="card-title">Independent Data Scientist</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">June 2022 - Present</h6>
-                            <p class="card-text">Beginning my career as an independent data scientist, I constantly advanced my skills through courses and Kaggle projects. This journey led to significant personal initiatives, such as developing a recommendation system and analyzing London crime data, and I continue to embrace continuous learning in data analysis and machine learning.</p>
-                            <div>
-                                <span class="badge badge-success">Python</span>
-                                <span class="badge badge-success">R</span>
-                                <span class="badge badge-success">Data Scraping</span>
-                                <span class="badge badge-success">t-SNE</span>
-                                <span class="badge badge-success">Principle Component Analysis</span>
-                                <span class="badge badge-success">Regression and Classification</span>
-                            </div>
-                        </div>
-                    </div>
+<!-- More Work Experience Entries -->
+
+<!-- Work Experience Entry -->
+<div class="col-lg-6 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title">
+                <img src="IDP-DS.png" alt="IDP Logo" class="card-logo">
+                <div>
+                    <h5>Independent Data Scientist</h5>
+                    <p class="card-subtitle">Jan 2020 - Present</p>
                 </div>
             </div>
+            <p class="card-text">Beginning my career as an independent data scientist, I constantly advanced my skills through courses and Kaggle projects. This journey led to significant personal initiatives, such as developing a recommendation system and analyzing London crime data, and I continue to embrace continuous learning in data analysis and machine learning.</p>
+            <!-- Skill Badges -->
+            <div class="skill-badges">
+                <span class="badge">Python</span>
+                <span class="badge">R</span>
+                <span class="badge">Data Scraping</span>
+                <span class="badge">t-SNE</span>
+                <span class="badge">Principle Component Analysis</span>
+                <span class="badge">Regression and Classification</span>
             </div>
-        </section>
+        </div>
+    </div>
+</div>
+
+<!-- Work Experience Entry -->
+<div class="col-lg-6 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title">
+                <img src="medium_logo_icon_189223.png" alt="writer Logo" class="card-logo">
+                <div>
+                    <h5>Medium Writer/Blogger</h5>
+                    <p class="card-subtitle">July 2023 - Present</p>
+                </div>
+            </div>
+            <p class="card-text">In progress...</p>
+            <!-- Skill Badges -->
+            <div class="skill-badges">
+                <span class="badge">Writing</span>
+                <span class="badge">Learning</span>
+                <!-- Add more badges as needed -->
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
-        <section id="projects" class="my-5">
-            <h2>Projects</h2>
-            <div class="card-deck">
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row">
+
+            <!-- Project Entry -->
+            <div class="col-lg-6 mb-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Mapping Crime in the Capital: A Decadal Spatial-Temporal Study of Crime in London</h5>
-                        <img src="london-crime-gif.gif" alt="Project 1 Thumbnail" class="card-img-top"> <!-- Project Thumbnail -->
-
-                        <p class="card-text">Conducted a comprehensive spatial-temporal analysis to understand geographical data trends over time using Bayesian statistical models. This project involved mapping data points and predicting future trends.</p>
-                        <div>
-                            <span class="badge badge-success">Geospatial Analysis</span>
-                            <span class="badge badge-success">Time Series analysis</span>
-                            <span class="badge badge-success">Data Visulization</span>
+                        <img src="london-crime-gif.gif" alt="Project Thumbnail" class="project-thumbnail">
+                        <p class="card-text">An in-depth machine learning project involving XYZ technologies.</p>
+                        <!-- Skill Badges -->
+                        <div class="skill-badges">
+                            <span class="badge">Geospatial Analysis</span>
+                            <span class="badge">Time Series analysis</span>
+                            <span class="badge">Data Visulization</span>
+                            <!-- Add more badges as needed -->
                         </div>
                     </div>
                 </div>
+            </div>
+            <!-- Project Entry -->
+            <div class="col-lg-6 mb-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Reading Recommendation System</h5>
-                        <img src="book-rec-gif.gif" alt="Project 2 Thumbnail" class="card-img-top"> <!-- Project Thumbnail -->
-
-                        <p class="card-text">This project involves building a book recommendation system that incorporates both a search engine and personalized recommendations using collaborative filtering. The system allows users to search for books by titles and author names. Users can then rate the books they have read, and create user profiles. These user profiles are then used to generate personalized book recommendations using collaborative filtering techniques. The system aims to provide users with relevant book suggestions based on their preferences and the ratings of similar users. The system was then deployed onto a web application using Flask./p>
-                        <div>
-                            <span class="badge badge-success">Machine Learning</span>
-                            <span class="badge badge-success">Natrual Language Processing</span>
-                            <span class="badge badge-success">Python</span>
-                            <span class="badge badge-success">Flask</span>
-                            <span class="badge badge-success">Collaborative Filtering</span>
-                            <span class="badge badge-success">End to End</span>
+                        <h5 class="card-title">Book Recommendation System</h5>
+                        <img src="book-rec-gif.gif" alt="Project Thumbnail" class="project-thumbnail">
+                        <p class="card-text">This project involves building a book recommendation system that incorporates both a search engine and personalized recommendations using collaborative filtering. The system allows users to search for books by titles and author names. Users can then rate the books they have read, and create user profiles. These user profiles are then used to generate personalized book recommendations using collaborative filtering techniques. The system aims to provide users with relevant book suggestions based on their preferences and the ratings of similar users. The system was then deployed onto a web application using Flask.</p>
+                        <!-- Skill Badges -->
+                        <div class="skill-badges">
+                            <span class="badge">Python</span>
+                            <span class="badge">TensorFlow</span>
+                            <span class="badge">Data Analysis</span>
+                            <!-- Add more badges as needed -->
                         </div>
                     </div>
                 </div>
-                <!-- More cards can be added similarly -->
             </div>
-        </section>
+
+            <!-- Repeat for other projects -->
+        </div>
+    </div>
+</section>
 
 
-        <section id="education" class="my-5">
-            <h2>Education</h2>
-            <div class="card">
-                <div class="card-body">
-                    <div class="row align-items-center">
-                        <div class="col-auto">
-                            <img src="uni-logo.jpeg" alt="University Logo" class="img-fluid" style="max-height: 75px;"> <!-- University Logo -->
-                        </div>
-                        <div class="col">
-                            <h5 class="card-title">BSc H Mathematics</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">University of Greenwich, 2019 - 2023</h6>
-                            <p class="card-text">
-                                <strong>Grade: First Class Honors</strong> <br>
-                                Relevant Modules: Linear Algebra, Vector Calculus, Partial Differential Equations, Optimization, Bayesian Inference, Linear Models, Financial Time Series etc.
-                            </p>
-                            <p class="card-text">
-                                <strong>Final Year Dissertation:</strong> <em>Modelling the risk of violent crime in London using Bayesian Spatial Temporal Models</em><br>
-                              My dissertation involved a niche application of Bayesian Spatial Temporal Models to analyze violent crime in London, focusing on identifying spatial and temporal crime patterns.</p>
+<!-- Education Section -->
+<section id="education" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Education</h2>
+        <div class="row">
+            <!-- Single Education Entry for B.Sc. Hons in Mathematics -->
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <img src="uni-logo.jpeg" alt="University Logo" class="card-logo">
                             <div>
-                                <span class="badge badge-success">Machine Learning</span>
-                                <span class="badge badge-success">Statistical Analysis</span>
-                                <span class="badge badge-success">Python & R Programming</span>
-                                <span class="badge badge-success">Statistical Inference</span>
-                                <span class="badge badge-success">Probability</span>
-                                <span class="badge badge-success">Bayesian Inference</span>
-                                <span class="badge badge-success">Hypothesis Testing</span>
+                                <h5>University of XYZ</h5>
+                                <p class="card-subtitle">B.Sc. (Hons) in Mathematics Graduated 2023</p>
+
                             </div>
+                        </div>
+                        <p class="card-text">
+                            <strong>Grade:</strong> First Class Honors.
+                            <br>
+                            <strong>Relevant Modules:</strong> Linear Algebra, Vector Calculus, Partial Differential Equations, Optimization, Bayesian Inference, Linear Models, Financial Time Series etc.
+                            <br>
+                            <strong>Dissertation:</strong>  Modelling the risk of violent crime in London using Bayesian Spatial Temporal Models.
+                            <br>
+                            My dissertation involved a niche application of Bayesian Spatial Temporal Models to analyze violent crime in London, focusing on identifying spatial and temporal crime patterns.</p>
+                        </p>
+
+                        <!-- Skill Badges -->
+                        <div class="skill-badges">
+                            <span class="badge">Machine Learning</span>
+                            <span class="badge">Statistical Analysis</span>
+                            <span class="badge">Python & R Programming</span>
+                            <span class="badge">Statistical Inference</span>
+                            <span class="badge">Probability</span>
+                            <span class="badge">Bayesian Inference</span>
+                            <span class="badge">Hypothesis Testing</span>
+                            <!-- Add more badges as needed -->
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-  
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Skills</h2>
+        <div class="row">
+            <!-- Skill Entry -->
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="card skill-card">
+                    <div class="card-body">
+                        <img src="Python.png" alt="Python" class="skill-logo">
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other skills -->
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="card skill-card">
+                    <div class="card-body">
+                        <img src="AWS.png" alt="AWS" class="skill-logo">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="card skill-card">
+                    <div class="card-body">
+                        <img src="Pandas.png" alt="Pandas" class="skill-logo">
+                    </div>
+                </div>
+            </div>
+            <!-- Add more skill entries as needed -->
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="card skill-card">
+                    <div class="card-body">
+                        <img src="scikit-learn.png" alt="sklearn" class="skill-logo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="card skill-card">
+                    <div class="card-body">
+                        <img src="NumPy.png" alt="numpy" class="skill-logo">
+                    </div>
+                </div>
+            </div>
 
 
-        <section id="skills" class="my-5">
-            <h2 class="card-title">Skills</h2>
-            <div class="card">
-                <div class="card-body">
-                    <div class="container">
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="card skill-card">
+                    <div class="card-body">
+                        <img src="Matplotlib.png" alt="Matplotlib" class="skill-logo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="card skill-card">
+                    <div class="card-body">
+                        <img src="R.png" alt="R" class="skill-logo">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="card skill-card">
+                    <div class="card-body">
+                        <img src="Git.png" alt="github" class="skill-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hobby Section -->
+<section id="hobbies" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Hobbies</h2>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
                         <div class="row">
-                            <!-- Example Skill Item -->
-                            <div class="col-md-2 text-center px-1 my-skill-col"> <!-- Custom class for reduced padding -->
-                                <img src="Python.png" alt="Python" class="img-fluid mb-1"  style="max-width: 50px; height: auto;">
-                                <p class="skill-text">Python</p>
+                            <!-- Hobby GIF Entry -->
+                            <div class="col-6 col-md-4 mb-4">
+                                <img src="kickups.gif" alt="Hobby 1" class="hobby-gif">
                             </div>
-                            <!-- Repeat for other skills -->
-                            <div class="col-md-2 text-center px-1 my-skill-col"> <!-- Custom class for reduced padding -->
-                                <img src="Matplotlib.png" alt="Matplotlib" class="img-fluid mb-1"  style="max-width: 50px; height: auto;">
-                                <p class="skill-text">Matplotlib</p>
+                            <!-- Repeat for other hobby GIFs -->
+                            <div class="col-6 col-md-4 mb-4">
+                                <img src="climbing.gif" alt="Hobby 2" class="hobby-gif">
                             </div>
-                            <!-- Add more columns for additional skills -->
-                            <div class="col-md-2 text-center px-1 my-skill-col"> <!-- Custom class for reduced padding -->
-                                <img src="scikit-learn.png" alt="Scikit-Learn" class="img-fluid mb-1"  style="max-width: 50px; height: auto;">
-                                <p class="skill-text">Scikit-Learn</p>
+                            <div class="col-6 col-md-4 mb-4">
+                                <img src="running.jpg" alt="Hobby 3" class="hobby-gif">
                             </div>
-
-                            <div class="col-md-2 text-center px-1 my-skill-col"> <!-- Custom class for reduced padding -->
-                                <img src="Pandas.png" alt="Pandas" class="img-fluid mb-1"  style="max-width: 50px; height: auto;">
-                                <p class="skill-text">Pandas</p>
-                            </div>
-
-                            <div class="col-md-2 text-center px-1 my-skill-col"> <!-- Custom class for reduced padding -->
-                                <img src="Ploty.png" alt="Ploty" class="img-fluid mb-1"  style="max-width: 50px; height: auto;">
-                                <p class="skill-text">Ploty</p>
-                            </div>
-
-                            <div class="col-md-2 text-center px-1 my-skill-col"> <!-- Custom class for reduced padding -->
-                                <img src="NumPy.png" alt="Numpy" class="img-fluid mb-1"  style="max-width: 50px; height: auto;">
-                                <p class="skill-text">Numpy</p>
-                            </div>
-
-                            <div class="col-md-2 text-center px-1 my-skill-col"> <!-- Custom class for reduced padding -->
-                                <img src="Flask.png" alt="Flask" class="img-fluid mb-1"  style="max-width: 50px; height: auto;">
-                                <p class="skill-text">Flask</p>
-                            </div>
-
-                            <div class="col-md-2 text-center px-1 my-skill-col"> <!-- Custom class for reduced padding -->
-                                <img src="Jupyter.png" alt="Jupyter" class="img-fluid mb-1"  style="max-width: 50px; height: auto;">
-                                <p class="skill-text">Jupyter</p>
-                            </div>
-
-                            <div class="col-md-2 text-center px-1 my-skill-col"> <!-- Custom class for reduced padding -->
-                                <img src="R.png" alt="R" class="img-fluid mb-1"  style="max-width: 50px; height: auto;">
-                                <p class="skill-text">R</p>
-                            </div>
-
-                            <div class="col-md-2 text-center px-1 my-skill-col"> <!-- Custom class for reduced padding -->
-                                <img src="AWS.png" alt="AWS" class="img-fluid mb-1"  style="max-width: 50px; height: auto;">
-                                <p class="skill-text">AWS</p>
-                            </div>
-
-                            <div class="col-md-2 text-center px-1 my-skill-col"> <!-- Custom class for reduced padding -->
-                                <img src="Git.png" alt="Git" class="img-fluid mb-1"  style="max-width: 50px; height: auto;">
-                                <p class="skill-text">Git</p>
-                            </div>
-
-                            <div class="col-md-2 text-center px-1 my-skill-col"> <!-- Custom class for reduced padding -->
-                                <img src="HTML5.png" alt="HTML5" class="img-fluid mb-1"  style="max-width: 50px; height: auto;">
-                                <p class="skill-text">HTML5</p>
-                            </div>
-
-
+                            <!-- Add more hobby GIF entries as needed -->
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <section id="interests" class="my-5">
-            <h2 class="card-title">Interests</h2>
-            <div class="card">
-                <div class="card-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="running.jpg" alt="Hobby 1" class="img-fluid mb-1"> <!-- Replace with your image path -->
-                                <!-- Optional caption or description -->
-                            </div>
-                            <div class="col-md-4">
-                                <img src="kickups.gif" alt="Hobby 4" class="img-fluid mb-1"> <!-- Replace with your image path -->
-                                <!-- Optional caption or description -->
-                            </div>
-                            
-                            <div class="col-md-4">
-                                <img src="climbing.gif" alt="Hobby 3" class="img-fluid mb-1"> <!-- Replace with your image path -->
-                                <!-- Optional caption or description -->
-                            </div>
-                            <!-- Add more columns as needed for additional images -->
-                            <div class="col-md-4">
-                                <img src="football.jpg" alt="Hobby 2" class="img-fluid mb-1"> <!-- Replace with your image path -->
-                                <!-- Optional caption or description -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!-- About Me Section -->
+<section id="about-me" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">About Me</h2>
+
+        <div class="card">
+            <div class="card-body text-center">
+                <!-- Optional: Your Image -->
+                <img src="side-bar/profilepic.jpg" alt="Your Name" class="about-image mb-3 rounded-circle" style="width: 150px; height: 150px;">
+                <p class="card-text">In Progess...</p>
+                <!-- More detailed text about your journey, experiences, and interests -->
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
 
-        <section id="contact" class="my-5">
-            <h2>Contact</h2>
-          <a href="mailto:adilsaid64@gmail.com"><i class="fas fa-envelope icon"></i></a>
-          <a href="https://www.linkedin.com/in/adil-s64" target="_blank"><i class="fab fa-linkedin icon"></i></a>
-          <a href="https://github.com/adilsaid64" target="_blank"><i class="fab fa-github icon"></i></a>
-        </section>
-    </main>
 
-    <footer class="text-center py-3">
-        © 2023 Adil's Portfolio | <a href="mailto:adilsaid64@gmail.com">Email Me</a>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/adil-s64" class="social-icon" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/adilsaid64" class="social-icon" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:adilsaid64@gmail.com" class="social-icon" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p>&copy; 2023 My Portfolio</p>
+        </div>
     </footer>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.5/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        const phrases = ["Data Scientist", "Football Fan", "Problem Solver", "Math Enthusiast", "Programmer"];
+        let phraseIndex = 0;
+        let letterIndex = 0;
+        const typingElement = document.getElementById('typing-effect');
+        const typingSpeed = 150;
+        const erasingSpeed = 100;
+        const newTextDelay = 2000; // Delay between current and next text
     
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        function type() {
+            if (letterIndex < phrases[phraseIndex].length) {
+                typingElement.textContent += phrases[phraseIndex].charAt(letterIndex);
+                letterIndex++;
+                setTimeout(type, typingSpeed);
+            } else {
+                // Erase after displaying a phrase
+                setTimeout(erase, newTextDelay);
+            }
+        }
+    
+        function erase() {
+            if (letterIndex > 0) {
+                typingElement.textContent = phrases[phraseIndex].substring(0, letterIndex - 1);
+                letterIndex--;
+                setTimeout(erase, erasingSpeed);
+            } else {
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                setTimeout(type, typingSpeed + 500);
+            }
+        }
+    
+        document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
+            if (phrases.length) setTimeout(type, newTextDelay + 250);
+        });
+    </script>
+    
 </body>
 </html>
