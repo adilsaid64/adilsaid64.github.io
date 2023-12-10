@@ -1,16 +1,6 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  color: #333;
-}
-
-.navbar-brand {
-  font-weight: 700;
-}
-
 #intro {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #9ac6f5;
+  color: #4a698b;
 }
 
 .info-section {
@@ -29,23 +19,27 @@ footer {
 /* Add any specific styling overrides or additional styles here */
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f8f9fa;
-  color: #212529;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #333; /* Switched to a softer color for better readability */
 }
 
-.navbar-brand {
-  font-weight: 700;
-}
 
 section {
   padding: 60px 0;
 }
 
 section h2 {
-  color: #007bff;
+  color: #9ac6f5; /* Retain the chosen color */
   margin-bottom: 40px;
+  font-weight: 700; /* Make the headings bolder for emphasis */
+  letter-spacing: 1.5px; /* Increase letter spacing for a modern touch */
+  font-size: 1.75rem; /* Slightly larger font size for prominence */
+  border-bottom: 2px solid #9ac6f5; /* Add a bottom border for definition */
+  display: inline-block; /* Required for the border to fit the text width */
+  padding-bottom: 5px; /* Padding to space out the text from the border */
 }
+
 
 .card {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -115,11 +109,166 @@ footer {
 
 .skill-badges .badge {
   display: inline-block;
-  background-color: #007bff; /* Bootstrap primary color */
+  background-color: #9ac6f5; /* Bootstrap primary color */
   color: white;
   padding: 5px 10px;
   margin: 5px;
   border-radius: 5px;
   font-size: 0.8em;
   text-transform: uppercase; /* Optional: for uppercase styling */
+}
+
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card-text strong {
+  color: #007bff; /* Blue color for section titles */
+}
+
+
+.skill-card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  text-align: center;
+}
+
+.skill-card:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.skill-logo {
+  max-width: 60px; /* Adjust size as needed */
+  height: auto;
+  margin: 10px auto; /* Center logo in the card */
+  display: block;
+}
+
+.hobby-gif {
+  width: 100%;
+  height: auto;
+  border-radius: 5px; /* Optional: for rounded corners */
+}
+
+.social-icons {
+  margin: 10px 0;
+}
+
+.social-icon {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #9ac6f5; /* Or any color you prefer */
+}
+
+.footer h5 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+/* General Navigation Bar Styles */
+.navbar {
+  background-color: #343a40; /* Dark background for a modern look */
+  padding: 0.8rem 1rem;
+  border-bottom: 3px solid #9ac6f5; /* Accent border */
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #9ac6f5 !important; /* Accent color for brand */
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+  color: #9ac6f5 !important; /* Slightly lighter color on hover */
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff !important;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Responsive Navbar Collapse */
+@media (max-width: 991px) {
+  .navbar-collapse {
+      background-color: #343a40;
+      padding: 1rem;
+  }
+
+  .navbar-nav .nav-item {
+      margin-bottom: 0.7rem;
+  }
+}
+
+
+#intro {
+  background-color: #f8f9fa; /* Light background */
+  padding: 60px 0; /* Spacious layout */
+}
+
+.display-4 {
+  color: #007bff; /* Vibrant color for the name */
+  margin-bottom: 20px; /* Spacing */
+}
+
+.lead {
+  font-size: 1.2rem; /* Emphasized font size */
+  margin-bottom: 30px; /* Spacing */
+}
+
+.typing-effect {
+  font-size: 1.2rem; /* Match the lead font size */
+  font-weight: bold;
+  color: #6c757d; /* Subtle color for typing effect */
+  display: inline; /* Inline with the preceding text */
+  white-space: nowrap; /* Keeps text on the same line */
+  border-right: 2px solid; /* Cursor effect */
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+      border-color: transparent;
+  }
+}
+
+.display-4 {
+  font-family: 'Open Sans', sans-serif; /* Using Open Sans */
+  font-size: 2.8rem; /* Slightly larger for impact */
+  font-weight: 700; /* Bold weight */
+  color: #0056b3; /* A deep blue for a professional look */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 20px; /* Adequate spacing from the next element */
+  transition: color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+}
+
+.display-4:hover {
+  color: #007bff; /* Lighter blue on hover for interactivity */
+  transform: translateY(-5px); /* Slight upward shift on hover */
+}
+
+.about-image {
+  border: 3px solid #007bff; /* Optional: border to highlight the image */
 }
