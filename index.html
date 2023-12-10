@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Data Science Portfolio</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
 
 
@@ -15,6 +17,66 @@
       padding-left: 5px; /* Reduced left padding */
       padding-right: 5px; /* Reduced right padding */
   }
+
+  .container-fluid {
+    width: 75%;
+    max-width: 75%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: #000000; /* Dark grey for text */
+}
+
+.badge{
+    color:  rgb(255, 255, 255);
+}
+
+a, .navbar-brand, .nav-link {
+    color:  rgb(81, 70, 179);
+}
+
+section {
+    padding: 10px 0;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+}
+
+
+
 </style>
 </head>
 
@@ -40,7 +102,7 @@
         </nav>
     </header>
 
-    <main class="container fluid">
+    <main class="container-fluid">
 
         <section id="experience" class="my-5">
             <h2>Work Experience</h2>
@@ -284,6 +346,10 @@
         </section>
     </main>
 
+    <footer class="text-center py-3">
+        © 2023 Adil's Portfolio | <a href="mailto:adilsaid64@gmail.com">Email Me</a>
+    </footer>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
