@@ -1,8 +1,3 @@
-#intro {
-  background-color: #9ac6f5;
-  color: #4a698b;
-}
-
 .info-section {
   padding: 40px 0;
 }
@@ -10,58 +5,62 @@
 .info-block {
   margin-bottom: 30px;
 }
-
-footer {
-  background-color: #212529;
-  color: #fff;
-}
-
 /* Add any specific styling overrides or additional styles here */
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 1rem;
-  color: #333; /* Switched to a softer color for better readability */
+  color: #ffffff; /* Switched to a softer color for better readability */
+  background-color: #343a40; 
 }
 
 
 section {
+  scroll-margin-top: 100px; /* Height of the navbar */
   padding: 60px 0;
+  animation: fadeInUp 0.5s ease-out forwards;
+
 }
 
 section h2 {
-  color: #9ac6f5; /* Retain the chosen color */
+  color: #ececec; /* Retain the chosen color */
   margin-bottom: 40px;
   font-weight: 700; /* Make the headings bolder for emphasis */
   letter-spacing: 1.5px; /* Increase letter spacing for a modern touch */
   font-size: 1.75rem; /* Slightly larger font size for prominence */
-  border-bottom: 2px solid #9ac6f5; /* Add a bottom border for definition */
+  border-bottom: 2px solid #bebebe; /* Add a bottom border for definition */
   display: inline-block; /* Required for the border to fit the text width */
   padding-bottom: 5px; /* Padding to space out the text from the border */
 }
 
 
 .card {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: linear-gradient(to bottom right, #373d43, #444e5a);
+  transition: box-shadow 0.3s ease-in-out, background ease-in-out;
 }
 
 .card:hover {
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  background: linear-gradient(to bottom right, #444e5a, #373d43);
 }
+
 
 .card-body {
   padding: 20px;
   text-align: left;
+  color :#1b1b1b;
 }
 
 .card-title {
   font-size: 1.25rem;
   font-weight: 500;
+  color: #FFFFFF;
 }
 
 .card-text {
   font-size: 1rem;
+  color: #FFFFFF;
 }
 
 footer {
@@ -93,7 +92,7 @@ footer {
 
 .card-subtitle {
   font-size: 1rem;
-  color: #6c757d;
+  color: #c8d3dc;
 }
 
 .card-text {
@@ -109,8 +108,8 @@ footer {
 
 .skill-badges .badge {
   display: inline-block;
-  background-color: #9ac6f5; /* Bootstrap primary color */
-  color: white;
+  background-color: #4b6b8b; /* Bootstrap primary color */
+  color: #FFFFFF;
   padding: 5px 10px;
   margin: 5px;
   border-radius: 5px;
@@ -125,7 +124,7 @@ footer {
 }
 
 .card-text strong {
-  color: #007bff; /* Blue color for section titles */
+  color: #ffffff; /* Blue color for section titles */
 }
 
 
@@ -164,7 +163,7 @@ footer {
 }
 
 .social-icon:hover {
-  color: #9ac6f5; /* Or any color you prefer */
+  color: #4b6b8b; /* Or any color you prefer */
 }
 
 .footer h5 {
@@ -172,33 +171,116 @@ footer {
   margin-bottom: 15px;
 }
 
-/* General Navigation Bar Styles */
-.navbar {
-  background-color: #343a40; /* Dark background for a modern look */
-  padding: 0.8rem 1rem;
-  border-bottom: 3px solid #9ac6f5; /* Accent border */
+
+#intro {
+  padding: 60px 0; /* Spacious layout */
+  margin-top: 100px; /* Adjust this value based on the navbar's height */
 }
 
-.navbar-brand {
-  font-weight: 700;
-  font-size: 1.5em;
-  color: #9ac6f5 !important; /* Accent color for brand */
-  transition: color 0.3s ease-in-out;
+.display-4 {
+  color: #ffffff; /* Vibrant color for the name */
+  margin-bottom: 20px; /* Spacing */
+}
+
+.lead {
+  font-size: 1.2rem; /* Emphasized font size */
+  margin-bottom: 30px; /* Spacing */
+}
+
+.typing-effect {
+  font-size: 1.2rem; /* Match the lead font size */
+  font-weight: bold;
+  color: #ffffff; /* Subtle color for typing effect */
+  display: inline; /* Inline with the preceding text */
+  white-space: nowrap; /* Keeps text on the same line */
+  border-right: 2px solid; /* Cursor effect */
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+      border-color: transparent;
+  }
+}
+
+.display-4 {
+  font-family: 'Nunito', sans-serif; /* Using Open Sans */
+  font-size: 2.8rem; /* Slightly larger for impact */
+  font-weight: 700; /* Bold weight */
+  color: #ffffff; /* A deep blue for a professional look */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 20px; /* Adequate spacing from the next element */
+  transition: color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+}
+
+.display-4:hover {
+  color: #4b6b8b; /* Lighter blue on hover for interactivity */
+  transform: translateY(-5px); /* Slight upward shift on hover */
+}
+
+.about-image {
+  border: 3px solid #3c3c3c; /* Optional: border to highlight the image */
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.navbar {
+  position: fixed; /* Keep navbar fixed at the top */
+  top: 10px; /* Adjust as needed */
+  left: 50%; /* Center the navbar */
+  transform: translateX(-50%); /* Adjust horizontal position */
+  z-index: 1000; /* Ensure navbar is above other elements */
+
+  border-radius: 30px; /* Pill-like rounded corners */
+  background-color: #101010; /* Background color of the navbar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: adds shadow for depth */
+
+  width: 80%; /* Increase the width */
+  max-width: 960px; /* Maximum width - adjust as needed */
+  padding: 10px 20px; /* Spacing inside the navbar */
+}
+
+/* Adjust the container within the navbar if needed */
+.navbar .container {
+  width: 100%; /* Full width of the navbar */
+}
+
+/* Ensure the navigation links are properly aligned */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Stylistic adjustments for navigation items and links */
+.nav-item {
+  margin: 0 5px; /* Spacing between nav items */
+}
+
+.nav-link {
+  padding: 8px 15px; /* Padding for nav links */
+  border-radius: 15px; /* Rounded corners for nav links */
+  /* Optional: add hover effects */
 }
 
 .navbar-brand:hover {
-  color: #9ac6f5 !important; /* Slightly lighter color on hover */
-}
-
-/* Navigation Links */
-.navbar-nav .nav-link {
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.8) !important;
-  transition: color 0.3s ease-in-out;
+  color: #4b6b8b !important; /* Slightly lighter color on hover */
 }
 
 .navbar-nav .nav-link:hover {
-  color: #fff !important;
+  color: #4b6b8b !important;
 }
 
 /* Navbar Toggler */
@@ -220,55 +302,4 @@ footer {
   .navbar-nav .nav-item {
       margin-bottom: 0.7rem;
   }
-}
-
-
-#intro {
-  background-color: #f8f9fa; /* Light background */
-  padding: 60px 0; /* Spacious layout */
-}
-
-.display-4 {
-  color: #007bff; /* Vibrant color for the name */
-  margin-bottom: 20px; /* Spacing */
-}
-
-.lead {
-  font-size: 1.2rem; /* Emphasized font size */
-  margin-bottom: 30px; /* Spacing */
-}
-
-.typing-effect {
-  font-size: 1.2rem; /* Match the lead font size */
-  font-weight: bold;
-  color: #6c757d; /* Subtle color for typing effect */
-  display: inline; /* Inline with the preceding text */
-  white-space: nowrap; /* Keeps text on the same line */
-  border-right: 2px solid; /* Cursor effect */
-  animation: blink 0.7s step-end infinite;
-}
-
-@keyframes blink {
-  50% {
-      border-color: transparent;
-  }
-}
-
-.display-4 {
-  font-family: 'Open Sans', sans-serif; /* Using Open Sans */
-  font-size: 2.8rem; /* Slightly larger for impact */
-  font-weight: 700; /* Bold weight */
-  color: #0056b3; /* A deep blue for a professional look */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  margin-bottom: 20px; /* Adequate spacing from the next element */
-  transition: color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
-}
-
-.display-4:hover {
-  color: #007bff; /* Lighter blue on hover for interactivity */
-  transform: translateY(-5px); /* Slight upward shift on hover */
-}
-
-.about-image {
-  border: 3px solid #007bff; /* Optional: border to highlight the image */
 }
