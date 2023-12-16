@@ -16,10 +16,9 @@ body {
 
 
 section {
-  scroll-margin-top: 100px; /* Height of the navbar */
+  scroll-margin-top: 45px; /* Height of the navbar */
   padding: 60px 0;
-  animation: fadeInUp 0.5s ease-out forwards;
-
+  animation: fadeInUp 2s ease-out forwards;
 }
 
 section h2 {
@@ -278,6 +277,13 @@ footer {
 .navbar-brand:hover {
   color: #4b6b8b !important; /* Slightly lighter color on hover */
 }
+
+.navbar-brand {
+  transition: opacity 0.3s ease-in-out;
+
+
+}
+
 
 .navbar-nav .nav-link:hover {
   color: #4b6b8b !important;

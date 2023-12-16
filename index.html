@@ -34,8 +34,10 @@
         </div>
     </nav>
 
+
+
 <!-- Intro Section -->
-<section id="intro" class="py-5 text-center">
+<section id="intro" data-nav="My Portfolio" class="py-5 text-center">
     <div class="container">
         <h1 class="display-4">Hello, I'm Adil</h1>
         <p class="lead">Exploring the world through data and innovation | <span id="typing-effect" class="typing-effect"></span></p>
@@ -56,7 +58,7 @@
 
 
  <!-- Work Experience Section -->
- <section id="work-experience" class="py-5">
+ <section id="work-experience" data-nav="Work Experience" class="py-5">
     <div class="container">
         <h2 class="text-center mb-4">Work Experience</h2>
         <div class="row">
@@ -146,7 +148,7 @@
 </section>
 
 <!-- Projects Section -->
-<section id="projects" class="py-5 bg-dark">
+<section id="projects" data-nav="Projects" class="py-5 bg-dark">
     <div class="container">
         <h2 class="text-center mb-4">Projects</h2>
         <div class="row">
@@ -192,7 +194,7 @@
 
 
 <!-- Education Section -->
-<section id="education" class="py-5 bg-dark">
+<section id="education" data-nav="Education" class="py-5 bg-dark">
     <div class="container">
         <h2 class="text-center mb-4">Education</h2>
         <div class="row">
@@ -289,7 +291,7 @@
 </section>
 
 <!-- Skills Section -->
-<section id="skills" class="py-5 bg-dark">
+<section id="skills" data-nav="Skills" class="py-5 bg-dark">
     <div class="container">
         <h2 class="text-center mb-4">Skills</h2>
         <div class="row">
@@ -386,7 +388,7 @@
 </section>
 
 <!-- Hobby Section -->
-<section id="hobbies" class="py-5">
+<section id="hobbies" data-nav="Hobbies" class="py-5">
     <div class="container">
         <h2 class="text-center mb-4 bg-dark">Hobbies</h2>
 
@@ -416,7 +418,7 @@
 </section>
 
 <!-- About Me Section -->
-<section id="about-me" class="py-5 bg-dark">
+<section id="about-me" data-nav="About me"class="py-5 bg-dark">
     <div class="container">
         <h2 class="text-center mb-4">About Me</h2>
 
@@ -488,6 +490,33 @@
         document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
             if (phrases.length) setTimeout(type, newTextDelay + 250);
         });
+
+        window.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('section');
+    const navBrand = document.querySelector('.navbar-brand');
+
+    sections.forEach(section => {
+        const top = window.scrollY;
+        const offset = section.offsetTop-50;
+        const height = section.offsetHeight;
+        const id = section.getAttribute('id');
+
+        if (top >= offset && top < offset + height) {
+            // Animate out
+            navBrand.style.opacity = '0';
+
+            // Wait for the animation to finish
+            setTimeout(() => {
+                // Change text
+                navBrand.textContent = section.getAttribute('data-nav');
+
+                // Animate in
+                navBrand.style.opacity = '1';
+            }, 300); // This duration should match the CSS transition duration
+        }
+    });
+});
+
     </script>
     
 </body>
