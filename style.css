@@ -213,7 +213,7 @@ footer {
 }
 
 .display-4:hover {
-  color: #4b6b8b; /* Lighter blue on hover for interactivity */
+  color: #000000; /* Lighter blue on hover for interactivity */
   transform: translateY(-5px); /* Slight upward shift on hover */
 }
 
@@ -286,7 +286,7 @@ footer {
 
 
 .navbar-nav .nav-link:hover {
-  color: #4b6b8b !important;
+  color: #ffffff !important;
 }
 
 /* Navbar Toggler */
