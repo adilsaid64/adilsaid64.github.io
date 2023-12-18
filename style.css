@@ -191,8 +191,8 @@ footer {
   font-weight: bold;
   color: #ffffff; /* Subtle color for typing effect */
   display: inline; /* Inline with the preceding text */
-  white-space: nowrap; /* Keeps text on the same line */
-  border-right: 2px solid; /* Cursor effect */
+  white-space: nowrap; 
+  border-right: 2px solid; 
   animation: blink 0.7s step-end infinite;
 }
 
@@ -203,22 +203,22 @@ footer {
 }
 
 .display-4 {
-  font-family: 'Nunito', sans-serif; /* Using Open Sans */
-  font-size: 2.8rem; /* Slightly larger for impact */
-  font-weight: 700; /* Bold weight */
-  color: #ffffff; /* A deep blue for a professional look */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  margin-bottom: 20px; /* Adequate spacing from the next element */
-  transition: color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700; 
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 20px; 
+  transition: color 0.3s ease, transform 0.2s ease; 
 }
 
 .display-4:hover {
-  color: #000000; /* Lighter blue on hover for interactivity */
-  transform: translateY(-5px); /* Slight upward shift on hover */
+  color: #000000; 
+  transform: translateY(-5px); 
 }
 
 .about-image {
-  border: 3px solid #3c3c3c; /* Optional: border to highlight the image */
+  border: 3px solid #3c3c3c; 
 }
 
 
