@@ -105,6 +105,56 @@ footer {
   border-radius: 5px; /* Optional: for rounded corners */
 }
 
+
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.game-thumbnail {
+  flex: 0 0 auto;
+  margin-right: 10px;
+  /* Add other styles for your thumbnails here */
+}
+
+.carousel {
+  position: relative;
+  max-width: 100%; /* allows carousel to fill the width of its container */
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-images img {
+  height: 300px; /* fixed height for all images */
+  object-fit: contain; /* maintains aspect ratio without stretching images */
+  width: auto; /* width adjusts according to the image's aspect ratio */
+  display: none;
+  margin-left: auto; /* centers the image horizontally */
+  margin-right: auto; /* centers the image horizontally */
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
 .skill-badges .badge {
   display: inline-block;
   background-color: #4b6b8b; /* Bootstrap primary color */
