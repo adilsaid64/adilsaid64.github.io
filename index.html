@@ -1,645 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adil Said Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Science Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#work-experience">Work Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about-me">About me</a></li>
 
-                </ul>
-            </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1">Data Science Portfolio</span>
+  </nav>
+
+  <!-- Main Content Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar Section -->
+      <aside class="col-md-3 mt-4">
+        <div class="text-center">
+          <img src="side-bar/profilepic.jpg" alt="Profile Picture" class="img-fluid rounded-circle mb-3">
+          <div class="mb-3">
+            <a href="https://github.com/yourusername" target="_blank"><img src="side-bar/github-logo.png" alt="GitHub" class="mr-3"></a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank"><img src="side-bar/linkedin-logo.png" alt="LinkedIn" class="mr-3"></a>
+            <a href="https://medium.com/@yourusername" target="_blank"><img src="side-bar/medium-logo.png" alt="Medium" class="mr-3"></a>
+          </div>
         </div>
-    </nav>
+      </aside>
 
-
-
-<!-- Intro Section -->
-<section id="intro" data-nav="My Portfolio" class="py-5 text-center">
-    <div class="container">
-        <h1 class="display-4">Hello, I'm Adil</h1>
-        <p class="lead">Exploring the world through data and innovation | <span id="typing-effect" class="typing-effect"></span></p>
+      <div class="col-md-9">
+<!-- Work Experience Section -->
+<section id="work-experience">
+  <h2 class="mt-4">Work Experience</h2>
+  <div class="card mb-3">
+    <div class="card-body d-flex align-items-center">
+      <img src="company-logo.jpg" alt="Company Logo" class="mr-3" style="width: 100px;">
+      <div>
+        <h5 class="card-title">Data Scientst @ Company Name</h5>
+        <ul class="card-text">
+          <li>Bullet point 1</li>
+          <li>Bullet point 2</li>
+          <li>Bullet point 3</li>
+        </ul>
+        <div>
+          <span class="badge badge-primary">Skill 1</span>
+          <span class="badge badge-primary">Skill 2</span>
+        </div>
+      </div>
     </div>
+  </div>
+  <!-- Add more work experience items as needed -->
+</section>
 
-    <div class="social-icons">
-        <a href="https://www.linkedin.com/in/adil-s64" class="social-icon" target="_blank" aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/adilsaid64" class="social-icon" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href="https://medium.com/@adilsaid64" class="social-icon" target="_blank" aria-label="Medium">
-            <i class="fab fa-medium"></i>
-        </a>
-        <a href="mailto:adilsaid64@gmail.com" class="social-icon" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-        </a>
+  
         
-    </div>
-</section>
-
-
- <!-- Work Experience Section -->
- <section id="work-experience" data-nav="Work Experience" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Work Experience</h2>
-        <div class="row">
-
-<!-- Work Experience Entry -->
-<div class="col-lg-6 mb-4">
-    <div class="card">
-        <div class="card-body">
-            <div class="card-title">
-                <img src="zally-logo.jpeg" alt="zally-logo Logo" class="card-logo">
-                <div>
-                    <h5>Data Scientist at Zally</h5>
-                    <p class="card-subtitle">July 2023 - Present</p>
-                </div>
-            </div>
-            <p class="card-text">At Zally, I am part of a forward-thinking team working on innovative solutions to eliminate the need for traditional passwords, enhancing security and user experience by leveraging data-driven insights and advanced authentication technologies.</p>
-            <!-- Skill Badges -->
-            <div class="skill-badges">
-                <span class="badge">Python</span>
-                <span class="badge">Data Engineering</span>
-                <span class="badge">Data Preprocessing</span>
-                <span class="badge">AWS</span>
-                <span class="badge">Machine Learning</span>
-                <span class="badge">Model Deployment</span>
-                <span class="badge">Research</span>
-                <span class="badge">Experimentation</span>
-                <span class="badge">Exploratory Analysis</span>                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- Work Experience Entry -->
-<div class="col-lg-6 mb-4">
-    <div class="card">
-        <div class="card-body">
-            <div class="card-title">
-                <img src="IDP-DS.png" alt="IDP Logo" class="card-logo">
-                <div>
-                    <h5>Freelance Data Scientist</h5>
-                    <p class="card-subtitle">Jan 2020 - Present</p>
-                </div>
-            </div>
-            <p class="card-text">Beginning my career as an independent data scientist, I constantly advanced my skills through courses and Kaggle projects. This journey led to significant personal initiatives, such as developing a recommendation system and analyzing London crime data, and I continue to embrace continuous learning in data analysis and machine learning.</p>
-            <!-- Skill Badges -->
-            <div class="skill-badges">
-                <span class="badge">Python</span>
-                <span class="badge">R</span>
-                <span class="badge">Data Scraping</span>
-                <span class="badge">t-SNE</span>
-                <span class="badge">Principle Component Analysis</span>
-                <span class="badge">Regression and Classification</span>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Work Experience Entry -->
-<div class="col-lg-6 mb-4">
-    <div class="card">
-        <div class="card-body">
-            <div class="card-title">
-                <img src="medium_logo_icon_189223.png" alt="Writer Logo" class="card-logo">
-                <div>
-                    <h5>Medium Writer/Blogger</h5>
-                    <p class="card-subtitle">July 2023 - Present</p>
-                </div>
-            </div>
-            <p class="card-text">
-                I create content about statistics simply because I love it. Each article is a part of my journey in learning and exploring this field, reflecting my own projects, discoveries and studies. Content creation allows me to reflect on what I've learned and deepen my own understanding.
-            </p>
-            <div class="social-icons">
-                <a href="https://medium.com/@adilsaid64" class="social-icon" target="_blank" aria-label="Medium">
-                    <i class="fab fa-medium"></i>
-                </a>
-            </div>
-            <!-- Skill Badges -->
-            <div class="skill-badges">
-                <span class="badge">Writing</span>
-                <span class="badge">Learning</span>
-                <span class="badge">Statistics</span>
-                <span class="badge">Data Analysis</span>
-                <span class="badge">Content Creation</span>
-            </div>
-    
-        </div>
-    </div>
-</div>
-
-
-
-        </div>
-    </div>
-</section>
-
-<!-- Projects Section -->
-<section id="projects" data-nav="Projects" class="py-5 bg-dark">
-    <div class="container">
-        <h2 class="text-center mb-4">Projects</h2>
-        <div class="row">
-
-            <!-- Project Entry -->
-            <div class="col-lg-6 mb-4">
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="mt-4">Projects</h2>
+            <div class="row">
+            <!-- Project 1 -->
+            <div class="col-md-4 mb-4">
                 <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Reddit Sentiment Analysis Dashboard</h5>
-                        <img src="reddit.gif" alt="Project Thumbnail" class="project-thumbnail">
-                        <p class="card-text"></p>
-
-                        <div class="social-icons">
-                            <a href="https://github.com/adilsaid64/reddit-project" class="social-icon" target="_blank" aria-label="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-    
-                        </div>
-
-                        <div class="skill-badges">
-                            <span class="badge">Data Engineering</span>
-                            <span class="badge">Database Design</span>
-                            <span class="badge">ETL Pipeline</span>
-                            <span class="badge">AWS</span>
-                            <span class="badge">Dashboard</span>
-                            <span class="badge">Natural Language Processing</span>
-                            <span class="badge">Sentiment Analysis</span>
-                            <span class="badge">Streamlit</span>
-                        </div>
+                <img src="london-crime-gif.gif" class="card-img-top" alt="Project 1 Thumbnail">
+                <div class="card-body">
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-text">Description of Project 1.</p>
+                    <a href="https://github.com/yourusername/project1" target="_blank">
+                    <img src="https://img.shields.io/badge/GitHub-View%20on%20GitHub-blue" alt="GitHub Badge">
+                    </a>
+                    <div>
+                    <span class="badge badge-success">Python</span>
+                    <span class="badge badge-success">Machine Learning</span>
                     </div>
                 </div>
-            </div>
-
-            <!-- Project Entry -->
-            <div class="col-lg-6 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Mapping Crime in the Capital: A Decadal Spatial-Temporal Study of Crime in London</h5>
-                        <img src="london-crime-gif.gif" alt="Project Thumbnail" class="project-thumbnail">
-                        <p class="card-text">Conducted a comprehensive spatial-temporal exploratory analysis of crime scenes in London over the past decade. The project involved analyzing time-series data and spatial plots to find trends and patterns. This enabled the identification of areas with higher crime rates in the past decade.</p>
-
-                        <div class="social-icons">
-                            <a href="https://github.com/adilsaid64/london-crime" class="social-icon" target="_blank" aria-label="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://medium.com/@adilsaid64/a-decade-of-crime-in-london-insights-from-spatial-temporal-data-9781369dccb6" class="social-icon" target="_blank" aria-label="Medium">
-                                <i class="fab fa-medium"></i>
-                            </a>
-                        </div>
-
-                        <div class="skill-badges">
-                            <span class="badge">Geospatial Analysis</span>
-                            <span class="badge">Time Series analysis</span>
-                            <span class="badge">Data Visulization</span>
-                        </div>
-                    </div>
                 </div>
             </div>
-
-            <!-- Project Entry -->
-            <div class="col-lg-6 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Recommendation System</h5>
-                        <img src="book-rec-gif.gif" alt="Project Thumbnail" class="project-thumbnail">
-                        <p class="card-text">This project involves building a book recommendation system that incorporates both a search engine and personalized recommendations using collaborative filtering. The system allows users to search for books by titles and author names. Users can then rate the books they have read, and create user profiles. These user profiles are then used to generate personalized book recommendations using collaborative filtering techniques. The system aims to provide users with relevant book suggestions based on their preferences and the ratings of similar users. The system was then deployed onto a web application using Flask.</p>
-                        <div class="social-icons">
-                            <a href="https://github.com/adilsaid64/book-rec-system" class="social-icon" target="_blank" aria-label="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                        <!-- Skill Badges -->
-                        <div class="skill-badges">
-                            <span class="badge">Python</span>
-                            <span class="badge">Natural Language Processing</span>
-                            <span class="badge">Collaborative Filtering</span>
-                            <span class="badge">Flask</span>
-                            <span class="badge">Recommender Systems</span>
-                            <span class="badge">Model Deployment</span>
-                            <!-- Add more badges as needed -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Other for other projects -->
-        </div>
-    </div>
-</section>
-
-
-<!-- Education Section -->
-<section id="education" data-nav="Education" class="py-5 bg-dark">
-    <div class="container">
-        <h2 class="text-center mb-4">Education</h2>
-        <div class="row">
-            <!-- Single Education Entry for B.Sc. Hons in Mathematics -->
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title">
-                            <img src="uni-logo.jpeg" alt="University Logo" class="card-logo">
-                            <div>
-                                <h5>B.Sc. (Hons) in Mathematics at the University of Greenwich</h5>
-                                <p class="card-subtitle">Graduated 2023</p>
-
-                            </div>
-                        </div>
-                        <p class="card-text">
-                            <strong>Grade:</strong> First Class Honors.
-                            <br>
-                            <strong>Relevant Modules:</strong> Linear Algebra, Vector Calculus, Partial Differential Equations, Optimization, Bayesian Inference, Linear Models, Financial Time Series etc.
-                            <br>
-                            <strong>Dissertation:</strong>  Modelling the risk of violent crime in London using Bayesian Spatial Temporal Models.
-                            <br>
-                            My dissertation involved a niche application of Bayesian Spatial Temporal Models to analyze violent crime in London, focusing on identifying spatial and temporal crime patterns.</p>
-                        </p>
-
-                        <!-- Skill Badges -->
-                        <div class="skill-badges">
-                            <span class="badge">Machine Learning</span>
-                            <span class="badge">Statistical Analysis</span>
-                            <span class="badge">Python & R Programming</span>
-                            <span class="badge">Statistical Inference</span>
-                            <span class="badge">Probability</span>
-                            <span class="badge">Bayesian Inference</span>
-                            <span class="badge">Hypothesis Testing</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<br>
-    <div class="container">
-        <!-- <h2 class="text-center mb-4">Coursework</h2> -->
-        <div class="row">
-
-            <!-- Project Entry -->
-            <div class="col-lg-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Wave Equation Solver</h5>
-                        <p class="card-subtitle">MATH1151 Partial Differential Equations</p>
-                        <img src="wave-solver.gif" alt="Project Thumbnail" class="project-thumbnail">
-                        <p class="card-text">Coursework for MATH1151 Partial Differential Equations. Coursework involved solving the wave equation using Python.</p>
-                        <!-- Skill Badges -->
-                        <div class="skill-badges">
-                            <span class="badge">Numerical Analysis</span>
-                            <span class="badge">Python</span>
-                            <span class="badge">Data Visulization</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Project Entry -->
-            <div class="col-lg-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Bayesian Linear Models and Analysis</h5>
-                        <p class="card-subtitle">MATH1189 Bayesian Methods and Their Applications</p>
-                        <img src="1189-gif.gif" alt="Project Thumbnail" class="project-thumbnail">
-                        <p class="card-text">
-                            Involved Bayesian statistical analysis using JAGS for regression, Gibbs sampling, and logistic regression for the Challenger study which emphasized predicting O-ring failure at varying temperatures.
-                        </p>
         
-                        <div class="skill-badges">
-                            <span class="badge">R</span>
-                            <span class="badge">R-jags</span>
-                            <span class="badge">Bayesian</span>
-                            <span class="badge">Bayesian Linear Models</span>
-                            <span class="badge">Gibbs Sampler</span>
-                            <span class="badge">Metropolis-within-Gibbs</span>
-                            <span class="badge">MCMC</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- Skills Section -->
-<section id="skills" data-nav="Skills" class="py-5 bg-dark">
-    <div class="container">
-        <h2 class="text-center mb-4">Skills</h2>
-        <div class="row">
-            <!-- Skill Entry -->
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <div class="card skill-card">
-                    <div class="card-body">
-                        <img src="Python.png" alt="Python" class="skill-logo">
-                    </div>
-                    <p>Python</p>
-                </div>
-            </div>
-          
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <div class="card skill-card">
-                    <div class="card-body">
-                        <img src="Pandas.png" alt="Pandas" class="skill-logo">
-                    </div>
-                    <p>Pandas</p>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <div class="card skill-card">
-                    <div class="card-body">
-                        <img src="scikit-learn.png" alt="sklearn" class="skill-logo">
-                    </div>
-                    <p>Scikit Learn</p>
-
-                </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <div class="card skill-card">
-                    <div class="card-body">
-                        <img src="NumPy.png" alt="numpy" class="skill-logo">
-                    </div>
-                    <p>Numpy</p>
-
-                </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <div class="card skill-card">
-                    <div class="card-body">
-                        <img src="Simpleicons-Team-Simple-Scipy.512.png" alt="scipy" class="skill-logo">
-                    </div>
-                    <p>Scipy</p>
-
-                </div>
-            </div>
-
-
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <div class="card skill-card">
-                    <div class="card-body">
-                        <img src="Matplotlib.png" alt="Matplotlib" class="skill-logo">
-                    </div>
-                    <p>Matplotlib</p>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <div class="card skill-card">
-                    <div class="card-body">
-                        <img src="R.png" alt="R" class="skill-logo">
-                    </div>
-                    <p>R</p>
-                </div>
-            </div>
-
-
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <div class="card skill-card">
-                    <div class="card-body">
-                        <img src="Git.png" alt="github" class="skill-logo">
-                    </div>
-                    <p>Git</p>
-                </div>
-            </div>
-            
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <div class="card skill-card">
-                    <div class="card-body">
-                        <img src="AWS.png" alt="AWS" class="skill-logo">
-                    </div>
-                    <p>AWS</p>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <div class="card skill-card">
-                    <div class="card-body">
-                        <img src="Streamlit.png" alt="Streamlit" class="skill-logo">
-                    </div>
-                    <p>Streamlit</p>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <div class="card skill-card">
-                    <div class="card-body">
-                        <img src="Flask.png" alt="Flask" class="skill-logo">
-                    </div>
-                    <p>Flask</p>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <div class="card skill-card">
-                    <div class="card-body">
-                        <img src="Apache Spark.png" alt="Apache Spark" class="skill-logo">
-                    </div>
-                    <p>Apache Spark</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- Hobby Section -->
-<section id="hobbies" data-nav="Hobbies" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-4 bg-dark">Hobbies</h2>
-
-        <div class="row">
-            <div class="col-12">
+            <!-- Project 2 -->
+            <div class="col-md-4 mb-4">
                 <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <!-- Hobby GIF Entry -->
-                            <div class="col-6 col-md-4 mb-4">
-                                <img src="kickups.gif" alt="Hobby 1" class="hobby-gif">
-                            </div>
-                            <!-- Repeat for other hobby GIFs -->
-                            <div class="col-6 col-md-4 mb-4">
-                                <img src="climbing.gif" alt="Hobby 2" class="hobby-gif">
-                            </div>
-                            <div class="col-6 col-md-4 mb-4">
-                                <img src="running.jpg" alt="Hobby 3" class="hobby-gif">
-                            </div>
-                            <!-- Add more hobby GIF entries as needed -->
-                        </div>
+                <img src="reddit.gif" class="card-img-top" alt="Project 2 Thumbnail">
+                <div class="card-body">
+                    <h5 class="card-title">Project 2</h5>
+                    <p class="card-text">Description of Project 2.</p>
+                    <a href="https://github.com/yourusername/project2" target="_blank">
+                    <img src="https://img.shields.io/badge/GitHub-View%20on%20GitHub-blue" alt="GitHub Badge">
+                    </a>
+                    <div>
+                    <span class="badge badge-success">Python</span>
+                    <span class="badge badge-success">Machine Learning</span>
                     </div>
+                </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- About Me Section -->
-<section id="about-me" data-nav="About me"class="py-5 bg-dark">
-    <div class="container">
-        <h2 class="text-center mb-4">About Me</h2>
-
-        <div class="card">
-            <div class="card-body text-center">
-                <!-- Optional: Your Image -->
-                <img src="side-bar/profilepic.jpg" alt="Your Name" class="about-image mb-3 rounded-circle" style="width: 150px; height: 150px;">
-                <p class="card-text"> I started my programming journey at age 12, making games for PCs and mobiles with Unity3D. My first languages were JavaScript and C#. I learned to code by following online tutorials and practicing regularly. I successfully published several games on the Google Play Store, which were my proud creations at the time. Although they were later removed due to terms of service updates, you can still find the APKs on third-party sites by searching for 'Adil Said platform games.'</p>
-                <div id="gameCarousel" class="carousel">
-                    <div class="carousel-images">
-                        <img src="Screenshot 2023-12-18 at 19.49.51.png" alt="Game 1">
-                        <img src="Screenshot 2023-12-18 at 19.53.32.png" alt="Game 2">
-                        <img src="Screenshot 2023-12-18 at 19.54.00.png" alt="Game 3">
-                    </div>
-                    <button class="carousel-control prev" onclick="moveSlide(-1)">&#10094;</button>
-                    <button class="carousel-control next" onclick="moveSlide(1)">&#10095;</button>
-                </div>
-                
-
-                <p class="card-text"> At 19, I began studying mathematics at university, where I developed a passion for statistics and machine learning. This led me to explore data science as a hobby in my second year. I learned Python and started applying real-world analysis techniques, combining my university education with what I learned from online courses. This experience helped me greatly, and after graduating, I landed my first job as a data scientist at Zally, focusing on solving password security issues with continuous authentication.</p>
         
-                <p class="card-text"> Outside of data science, I'm passionate about playing football, working out at the gym, rock climbing, exploring new places, and spending time with friends and family.</p>
+            <!-- Add more projects as needed -->
             </div>
-        </div>
-    </div>
-</section>
+        </section>
+        
 
-    <!-- Footer -->
-    <footer class="py-4 bg-dark text-white-50">
-        <div class="container text-center">
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/adil-s64" class="social-icon" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/adilsaid64" class="social-icon" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://medium.com/@adilsaid64" class="social-icon" target="_blank" aria-label="Medium">
-                    <i class="fab fa-medium"></i>
-                </a>
-                <a href="mailto:adilsaid64@gmail.com" class="social-icon" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-
-                <a href="https://drive.google.com/file/d/1wWwTFKSS-v680ynrqbQ5hayK6rwazJaF/view?usp=sharing" class="social-icon" target="_blank" aria-label="Resume">
-                    <i class="fas fa-file-alt"></i>
-                </a>
-                
+        <!-- Education Section -->
+        <section id="education-experience">
+            <h2 class="mt-4">Education</h2>
+            <div class="card mb-3">
+            <div class="card-body d-flex align-items-center">
+                <img src="uni-logo.jpeg" alt="University Logo" class="mr-3" style="width: 100px;">
+                <div>
+                <h5 class="card-title">University Name</h5>
+                <p class="card-text">Subject: Your Subject</p>
+                <p class="card-text">Year of Graduation: 2023</p>
+                <p class="card-text">Grade: First Class</p>
+                <p class="card-text">Relevant Modules: Module 1, Module 2, Module 3</p>
+                <p class="card-text">Final Year Dissertation: Title of Your Dissertation</p>
+                <div>
+                    <span class="badge badge-primary">Skill 1</span>
+                    <span class="badge badge-primary">Skill 2</span>
+                </div>
+                </div>
             </div>
-            <p>&copy; 2024 Adil Said</p>
-        </div>
-    </footer>
+            </div>
+        </section>
+        
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.5/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script>
-        const phrases = ["Data Scientist", "Data Engineer", "Programmer", "Football Fan", "Problem Solver", "Math Enthusiast", "Blogger"];
-        let phraseIndex = 0;
-        let letterIndex = 0;
-        const typingElement = document.getElementById('typing-effect');
-        const typingSpeed = 150;
-        const erasingSpeed = 100;
-        const newTextDelay = 2000; // Delay between current and next text
-    
-        function type() {
-            if (letterIndex < phrases[phraseIndex].length) {
-                typingElement.textContent += phrases[phraseIndex].charAt(letterIndex);
-                letterIndex++;
-                setTimeout(type, typingSpeed);
-            } else {
-                // Erase after displaying a phrase
-                setTimeout(erase, newTextDelay);
-            }
-        }
-    
-        function erase() {
-            if (letterIndex > 0) {
-                typingElement.textContent = phrases[phraseIndex].substring(0, letterIndex - 1);
-                letterIndex--;
-                setTimeout(erase, erasingSpeed);
-            } else {
-                phraseIndex = (phraseIndex + 1) % phrases.length;
-                setTimeout(type, typingSpeed + 500);
-            }
-        }
-    
-        document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
-            if (phrases.length) setTimeout(type, newTextDelay + 250);
-        });
-
-        window.addEventListener('scroll', function() {
-    const sections = document.querySelectorAll('section');
-    const navBrand = document.querySelector('.navbar-brand');
-
-    sections.forEach(section => {
-        const top = window.scrollY;
-        const offset = section.offsetTop-50;
-        const height = section.offsetHeight;
-        const id = section.getAttribute('id');
-
-        if (top >= offset && top < offset + height) {
-            // Animate out
-            navBrand.style.opacity = '0';
-
-            // Wait for the animation to finish
-            setTimeout(() => {
-                // Change text
-                navBrand.textContent = section.getAttribute('data-nav');
-
-                // Animate in
-                navBrand.style.opacity = '1';
-            }, 300); // This duration should match the CSS transition duration
-        }
-    });
-});
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function moveSlide(n) {
-  showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("carousel-images")[0].getElementsByTagName("img");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  slides[slideIndex-1].style.display = "block";  
-}
-
-
-    </script>
-    
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
