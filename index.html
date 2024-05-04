@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adil Said - Data Science Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
       <div class="container">
-          <a class="navbar-brand" href="#">Adil Said - Data Science Portfolio</a>
+          <a class="navbar-brand" href="#">Adil Said - Data Science Portfolio - (In Development)</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
@@ -24,8 +26,11 @@
                       <a class="nav-link" href="#projects">Projects</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#education-experience">Education</a>
+                      <a class="nav-link" href="#education">Education</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#hobbies">Hobbies</a>
+                </li>
               </ul>
           </div>
       </div>
@@ -43,9 +48,10 @@
                       </div>
                   </div>
                   <div class="mb-3">
-                      <a href="https://github.com/yourusername" target="_blank"><img src="side-bar/github-logo.png" alt="GitHub" class="mr-3"></a>
-                      <a href="https://www.linkedin.com/in/yourusername" target="_blank"><img src="side-bar/linkedin-logo.png" alt="LinkedIn" class="mr-3"></a>
-                      <a href="https://medium.com/@yourusername" target="_blank"><img src="side-bar/medium-logo.png" alt="Medium" class="mr-3"></a>
+                    <a href="https://www.linkedin.com/in/adil-s64" class="mr-3" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/adilsaid64" class="mr-3" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://medium.com/@adilsaid64" class="mr-3" target="_blank" aria-label="Medium"> <i class="fab fa-medium"></i></a>
+                    <a href="mailto:adilsaid64@gmail.com" class="mr-3" aria-label="Email"><i class="fas fa-envelope"></i></a>
                   </div>
               </div>
           </aside>
@@ -121,11 +127,34 @@
                     <div class="row">
                         <div class="col-md-4 mb-4">  
                             <div class="card">
+                                <img src="football_proj.webp" class="card-img-top" alt="Project 1 Thumbnail">
+                                <div class="card-body">
+                                    <h5 class="card-title">Predicting Premier League Football Match wins using Bayesian Modelling</h5>
+                                    <p class="card-text">Combing my passion for Data Science and Football. In this project I use Bayesian Modelling to predict Premier League football match wins.</p>
+                                    <a href="https://github.com/adilsaid64/bayesian-football-match-prediction" target="_blank">
+                                        <img src="https://img.shields.io/badge/GitHub-View%20on%20GitHub-blue" alt="GitHub Badge">
+                                    </a>
+                                    <a href="https://medium.com/@adilsaid64/predicting-premier-league-match-wins-using-bayesian-modelling-32eec733472e" target="_blank">
+                                        <img src="https://img.shields.io/badge/Medium-Read%20Article-green" alt="Medium Badge">
+                                    </a>
+                                    
+                                    <div>
+                                        <span class="badge badge-success">Python</span>
+                                        <span class="badge badge-success">Machine Learning</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-4 mb-4">  
+                            <div class="card">
                                 <img src="reddit.gif" class="card-img-top" alt="Project 1 Thumbnail">
                                 <div class="card-body">
-                                    <h5 class="card-title">Reddit Sentiment Analysis Dashboard</h5>
-                                    <p class="card-text">Description of Project 1.</p>
-                                    <a href="https://github.com/yourusername/project1" target="_blank">
+                                    <h5 class="card-title">Reddit Sentiment Analysis Streamlit Dashboard</h5>
+                                    <p class="card-text">A Reddit Sentiment Analysis Streamlit Application. Users can search for a subreddit and get a sentiment summary of all posts and comments in the subreddit. Users can also see trends in sentiment.</p>
+                                    <a href="https://github.com/adilsaid64/reddit-project" target="_blank">
                                         <img src="https://img.shields.io/badge/GitHub-View%20on%20GitHub-blue" alt="GitHub Badge">
                                     </a>
                                     <div>
@@ -143,7 +172,7 @@
                                 <img src="london-crime-gif.gif" class="card-img-top" alt="Project 1 Thumbnail">
                                 <div class="card-body">
                                     <h5 class="card-title">A Decade of Crime in London: An Explorotory Analysis of Crimes in London</h5>
-                                    <p class="card-text">A Decade of Crime in London</p>
+                                    <p class="card-text">An explorotory analysis of crime in London. Highlighting high crime rate areas and most prevelent crimes. Exploring how crime in London has evolved since 2011 to 2023.</p>
                                     <a href="https://github.com/yourusername/project1" target="_blank">
                                         <img src="https://img.shields.io/badge/GitHub-View%20on%20GitHub-blue" alt="GitHub Badge">
                                     </a>
@@ -161,7 +190,7 @@
 
 
                 <!-- Education Section -->
-                <section id="education-experience">
+                <section id="education">
                     <h2 class="mt-4">Education</h2>
                     <div class="card mb-3">
                         <div class="card-body d-flex align-items-center">
@@ -184,6 +213,23 @@
                 </section>
 
 
+                <!-- Hobbies Section -->
+                <section id="hobbies">
+                    <h2 class="mt-4">Hobbies</h2>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <!-- Hobbies Photos -->
+                            <div class="d-flex justify-content-between">
+                                <img src="kickups.gif" alt="Doing kick-ups with a soccer ball" class="img-fluid m-2" style="max-width: 32%;">
+                                <img src="running.jpg" alt="Running in a park" class="img-fluid m-2" style="max-width: 32%;">
+                                <img src="climbing.gif" alt="Climbing a rock wall" class="img-fluid m-2" style="max-width: 32%;">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
             </div>
         </div>
     </div>
@@ -192,7 +238,7 @@
 
     <!-- Footer -->
     <div class="text-center bg-light text-muted py-3">
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        <p>&copy; 2024 Adil Said. All Rights Reserved.</p>
     </div>
 
     <!-- Bootstrap Scripts -->
